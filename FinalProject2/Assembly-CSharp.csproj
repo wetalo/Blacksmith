@@ -61,6 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\EasyColliderEditor\Scripts\EasyColliderEditor.cs" />
+    <Compile Include="Assets\EasyColliderEditor\Scripts\EasyColliderPreferences.cs" />
+    <Compile Include="Assets\EasyColliderEditor\Scripts\MeshListBuilder.cs" />
+    <Compile Include="Assets\EasyColliderEditor\Scripts\MeshTransform.cs" />
     <Compile Include="Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
@@ -343,6 +347,7 @@
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceMod.cs" />
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceModContext.cs" />
     <Compile Include="Assets\Scripts\Beat.cs" />
+    <Compile Include="Assets\Scripts\BucketTrigger.cs" />
     <Compile Include="Assets\Scripts\SwordHit.cs" />
     <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarMaterialStateShader.cginc" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
