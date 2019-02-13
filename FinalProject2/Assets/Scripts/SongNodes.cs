@@ -9,9 +9,11 @@ public struct SongNode
     public float second;
     public float centisecond;
 
+    public float floatTimestamp;
+
 }
 [CreateAssetMenu(fileName = "Song", menuName = "SongNodeList")]
 public class SongNodes : ScriptableObject {
-    public SongNode[] nodes;
+    public List<SongNode> nodes;
 	
 }

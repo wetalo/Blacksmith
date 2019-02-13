@@ -15,7 +15,7 @@ public class Beat : MonoBehaviour {
 
     float timer;
 
-    bool isOff;
+    bool isOn;
     AudioSource sound;
 
     public float leeWay = 0.1f;
@@ -23,6 +23,11 @@ public class Beat : MonoBehaviour {
     
     public GameObject expandingCirclePrefab;
     public Transform targetCircle;
+
+    public SongNodes songNodes;
+    SongNode currentNode;
+    int currentNodeIndex;
+    float nextTimestamp;
     
 
 	// Use this for initialization
@@ -30,17 +35,35 @@ public class Beat : MonoBehaviour {
         renderer = GetComponent<Renderer>();
         timer = 0f;
         sound = GetComponent<AudioSource>();
-        isOff = true;
+
         
 	}
+
+    void SetupNode(int nodeIndex)
+    {
+        currentNode = songNodes.nodes[nodeIndex];
+        nextTimestamp = currentNode.floatTimestamp;
+    }
+
+    public void StartSong()
+    {
+        timer = 0f;
+        isOn = true;
+        currentNodeIndex = 0;
+        SetupNode(currentNodeIndex);
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        timer += Time.deltaTime;
-        if(timer >= 1)
+        if (isOn)
         {
-            MakeExpander();
-            timer = 0f;
+            timer += Time.deltaTime;
+            if (timer >= nextTimestamp-1)
+            {
+                MakeExpander();
+                currentNodeIndex++;
+                SetupNode(currentNodeIndex);
+            }
         }
 
 	}
