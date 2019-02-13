@@ -350,6 +350,8 @@
     <Compile Include="Assets\Scripts\BucketTrigger.cs" />
     <Compile Include="Assets\Scripts\Expander.cs" />
     <Compile Include="Assets\Scripts\LifeTime.cs" />
+    <Compile Include="Assets\Scripts\PointTracker.cs" />
+    <Compile Include="Assets\Scripts\SongNodes.cs" />
     <Compile Include="Assets\Scripts\SwordHit.cs" />
     <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarMaterialStateShader.cginc" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />

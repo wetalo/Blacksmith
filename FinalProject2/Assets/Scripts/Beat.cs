@@ -47,7 +47,10 @@ public class Beat : MonoBehaviour {
 
     public void MakeExpander()
     {
-        GameObject.Instantiate(expandingCirclePrefab,targetCircle,false).GetComponent<Expander>().targetCircle = transform;
+        Expander expander = GameObject.Instantiate(expandingCirclePrefab, targetCircle, false).GetComponent<Expander>();
+        expander.targetCircle = transform;
+        expander.leeWay = this.leeWay;
+        expander.tracker = GetComponent<PointTracker>();
     }
 
     //Deprecated code, keeping for sentimental value <3
