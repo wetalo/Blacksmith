@@ -54,6 +54,7 @@ public class Beat : MonoBehaviour {
         timer = 0f;
         isOn = true;
         currentNodeIndex = 0;
+        GetComponent<PointTracker>().totalBeats = songNodes.nodes.Count;
         SetupNode(currentNodeIndex);
     }
 	

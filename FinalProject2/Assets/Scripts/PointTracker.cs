@@ -13,6 +13,9 @@ public class PointTracker : MonoBehaviour {
     bool tookHit;
     public Text pointTrackerText;
 
+    public int totalBeats;
+    public SwordBlend blender;
+
 	void Start() {
         score = 0;
         misses = 0;
@@ -23,6 +26,7 @@ public class PointTracker : MonoBehaviour {
     void AddPoint()
     {
         score++;
+        blender.GoodHit(((float)score) / ((float)totalBeats));
     }
 
     void AddMiss()
@@ -33,6 +37,7 @@ public class PointTracker : MonoBehaviour {
     void AddFalseHit()
     {
         falseHits++;
+        blender.BadHit(((float)falseHits) / ((float)totalBeats));
     }
 
 
