@@ -13,7 +13,7 @@ public class PointTracker : MonoBehaviour {
     bool tookHit;
     public Text pointTrackerText;
 
-	public PointTracker() {
+	void Start() {
         score = 0;
         misses = 0;
         falseHits = 0;

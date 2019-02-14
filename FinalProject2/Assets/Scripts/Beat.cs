@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Beat : MonoBehaviour {
 
@@ -28,7 +29,8 @@ public class Beat : MonoBehaviour {
     SongNode currentNode;
     int currentNodeIndex;
     float nextTimestamp;
-    
+
+    public Text nodeIndexText;
 
 	// Use this for initialization
 	void Start () {
@@ -43,6 +45,8 @@ public class Beat : MonoBehaviour {
     {
         currentNode = songNodes.nodes[nodeIndex];
         nextTimestamp = currentNode.floatTimestamp;
+
+        nodeIndexText.text = "Node: " + (nodeIndex + 1);
     }
 
     public void StartSong()
