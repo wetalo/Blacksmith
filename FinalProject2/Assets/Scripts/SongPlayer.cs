@@ -6,7 +6,9 @@ public class SongPlayer : MonoBehaviour {
     
     public MusicPlayer player;
 
-    public Beat beat;
+    public Beat beat1;
+    public Beat beat2;
+    public Beat beat3;
     bool isPlayingSong;
 
     float timer;
@@ -34,7 +36,9 @@ public class SongPlayer : MonoBehaviour {
         player.StartPlayingMusic();
         isPlayingSong = true;
 
-        beat.StartSong();
+        beat1.StartSong();
+        beat2.StartSong();
+        beat3.StartSong();
 
     }
 

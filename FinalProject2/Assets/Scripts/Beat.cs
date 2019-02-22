@@ -31,6 +31,7 @@ public class Beat : MonoBehaviour {
     float nextTimestamp;
 
     public Text nodeIndexText;
+    public PointTracker tracker;
 
 	// Use this for initialization
 	void Start () {
@@ -54,7 +55,7 @@ public class Beat : MonoBehaviour {
         timer = 0f;
         isOn = true;
         currentNodeIndex = 0;
-        GetComponent<PointTracker>().totalBeats = songNodes.nodes.Count;
+        tracker.totalBeats = songNodes.nodes.Count;
         SetupNode(currentNodeIndex);
     }
 	
@@ -76,9 +77,10 @@ public class Beat : MonoBehaviour {
     public void MakeExpander()
     {
         Expander expander = GameObject.Instantiate(expandingCirclePrefab, targetCircle, false).GetComponent<Expander>();
+        expander.gameObject.transform.position = targetCircle.position;
         expander.targetCircle = transform;
         expander.leeWay = this.leeWay;
-        expander.tracker = GetComponent<PointTracker>();
+        expander.tracker = tracker;
     }
 
     //Deprecated code, keeping for sentimental value <3
