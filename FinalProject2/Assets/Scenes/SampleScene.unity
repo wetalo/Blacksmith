@@ -1621,6 +1621,11 @@ Prefab:
       propertyPath: m_Name
       value: White Circle (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114082613263988160, guid: 05f295c5e2339e64382c21f1d61287ec,
+        type: 2}
+      propertyPath: hitboxIndex
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
   m_IsPrefabAsset: 0
@@ -1693,6 +1698,11 @@ Prefab:
     - target: {fileID: 1515066147118948, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
       propertyPath: m_Name
       value: White Circle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114082613263988160, guid: 05f295c5e2339e64382c21f1d61287ec,
+        type: 2}
+      propertyPath: hitboxIndex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
@@ -2876,5 +2886,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0091cd257c8fc1a41ab9ffe7b4f99164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  songNodesToModify: {fileID: 11400000, guid: 0c4eb792cdc7d6948b91230c03c58133, type: 2}
+  beat1:
+    beat: {fileID: 11400000, guid: 0c4eb792cdc7d6948b91230c03c58133, type: 2}
+    edit: 1
+  beat2:
+    beat: {fileID: 11400000, guid: a8d935fa6a9cbbb4b9b4b1ec2d1169f1, type: 2}
+    edit: 1
+  beat3:
+    beat: {fileID: 11400000, guid: 5182f4e6fd1af174c98cecbf5c91077e, type: 2}
+    edit: 1
   player: {fileID: 1058046771}

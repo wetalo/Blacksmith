@@ -2,9 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+struct EditableNode
+{
+    public SongNodes beat;
+    public bool edit;
+}
 public class SongGenerator : MonoBehaviour {
 
-    public SongNodes songNodesToModify;
+    [SerializeField]
+    EditableNode beat1;
+    [SerializeField]
+    EditableNode beat2;
+    [SerializeField]
+    EditableNode beat3;
     public MusicPlayer player;
 
 
@@ -29,10 +40,44 @@ public class SongGenerator : MonoBehaviour {
         }
 	}
 
-    public void TakeHit()
+    public void TakeHit(SwordHitboxType hitboxIndex)
     {
         if (isPlayingSong)
         {
+            SongNodes songNodesToModify = new SongNodes();
+            switch (hitboxIndex)
+            {
+                case SwordHitboxType.Box1:
+                    if (beat1.edit)
+                    {
+                        songNodesToModify = beat1.beat;
+                    } else
+                    {
+                        return;
+                    }
+                    break;
+                case SwordHitboxType.Box2:
+                    if (beat2.edit)
+                    {
+                        songNodesToModify = beat2.beat;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                    break;
+                case SwordHitboxType.Box3:
+                    if (beat3.edit)
+                    {
+                        songNodesToModify = beat3.beat;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                    break;
+            }
+            
             SongNode node = new SongNode();
             node.floatTimestamp = timer;
 
@@ -42,12 +87,27 @@ public class SongGenerator : MonoBehaviour {
 
     public void CreateSong()
     {
+        if (beat1.edit)
+        {
+            beat1.beat.nodes = new List<SongNode>();
+        }
+
+        if (beat2.edit)
+        {
+            beat2.beat.nodes = new List<SongNode>();
+        }
+
+        if (beat3.edit)
+        {
+            beat3.beat.nodes = new List<SongNode>();
+        }
+
         //ScriptableObject.CreateInstance("SongNodes");
         player.StartPlayingMusic();
         timer = 0f;
         isPlayingSong = true;
 
-        songNodesToModify.nodes = new List<SongNode>();
+
 
     }
 
