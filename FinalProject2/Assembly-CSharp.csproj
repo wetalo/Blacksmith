@@ -351,6 +351,7 @@
     <Compile Include="Assets\Scripts\Expander.cs" />
     <Compile Include="Assets\Scripts\LifeTime.cs" />
     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
+    <Compile Include="Assets\Scripts\PointManager.cs" />
     <Compile Include="Assets\Scripts\PointTracker.cs" />
     <Compile Include="Assets\Scripts\SongGenerator.cs" />
     <Compile Include="Assets\Scripts\SongNodes.cs" />

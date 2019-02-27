@@ -697,7 +697,6 @@ MonoBehaviour:
     type: 2}
   targetCircle: {fileID: 1960487584}
   songNodes: {fileID: 11400000, guid: 0c4eb792cdc7d6948b91230c03c58133, type: 2}
-  nodeIndexText: {fileID: 1692679367}
   tracker: {fileID: 600536143}
 --- !u!114 &600536143
 MonoBehaviour:
@@ -712,7 +711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointTrackerText: {fileID: 2021247589}
   totalBeats: 0
-  blender: {fileID: 973177640}
+  PM: {fileID: 1868670951}
 --- !u!4 &600536144
 Transform:
   m_ObjectHideFlags: 0
@@ -832,7 +831,8 @@ Prefab:
       propertyPath: shape
       value: 
       objectReference: {fileID: 977374862}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114167898037618890, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &816654197
@@ -1120,12 +1120,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &973177640 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114167898037618890, guid: 05f295c5e2339e64382c21f1d61287ec,
-    type: 2}
-  m_PrefabInternal: {fileID: 677312597}
-  m_Script: {fileID: 11500000, guid: 17281c0a594767148b81d55ea1180e50, type: 3}
 --- !u!1 &977374862 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 04ed9e2251a7f304f88763080a4cb2af,
@@ -1149,15 +1143,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 04ed9e2251a7f304f88763080a4cb2af, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.485154
+      value: -8.49
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 04ed9e2251a7f304f88763080a4cb2af, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.20699057
+      value: -0.6555
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 04ed9e2251a7f304f88763080a4cb2af, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.345417
+      value: -1.3243
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 04ed9e2251a7f304f88763080a4cb2af, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1221,15 +1215,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 04ed9e2251a7f304f88763080a4cb2af, type: 3}
       propertyPath: m_LocalScale.x
-      value: 28.749477
+      value: 39.47591
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 04ed9e2251a7f304f88763080a4cb2af, type: 3}
       propertyPath: m_LocalScale.y
-      value: 51.74679
+      value: 71.05352
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 04ed9e2251a7f304f88763080a4cb2af, type: 3}
       propertyPath: m_LocalScale.z
-      value: 22.81098
+      value: 31.321758
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04ed9e2251a7f304f88763080a4cb2af, type: 3}
@@ -1522,7 +1516,6 @@ MonoBehaviour:
     type: 2}
   targetCircle: {fileID: 856386423}
   songNodes: {fileID: 11400000, guid: 5182f4e6fd1af174c98cecbf5c91077e, type: 2}
-  nodeIndexText: {fileID: 1692679367}
   tracker: {fileID: 1212597144}
 --- !u!114 &1212597144
 MonoBehaviour:
@@ -1537,7 +1530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointTrackerText: {fileID: 914367491}
   totalBeats: 0
-  blender: {fileID: 973177640}
+  PM: {fileID: 1868670951}
 --- !u!4 &1212597145
 Transform:
   m_ObjectHideFlags: 0
@@ -1626,7 +1619,8 @@ Prefab:
       propertyPath: hitboxIndex
       value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114167898037618890, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1390833770
@@ -1704,7 +1698,8 @@ Prefab:
       propertyPath: hitboxIndex
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114167898037618890, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1571537880 stripped
@@ -1808,7 +1803,7 @@ GameObject:
   - component: {fileID: 1692679368}
   - component: {fileID: 1692679367}
   m_Layer: 0
-  m_Name: Text
+  m_Name: DebugText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2175,7 +2170,6 @@ MonoBehaviour:
     type: 2}
   targetCircle: {fileID: 1079043343}
   songNodes: {fileID: 11400000, guid: a8d935fa6a9cbbb4b9b4b1ec2d1169f1, type: 2}
-  nodeIndexText: {fileID: 1692679367}
   tracker: {fileID: 1823251240}
 --- !u!114 &1823251240
 MonoBehaviour:
@@ -2190,7 +2184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointTrackerText: {fileID: 482703338}
   totalBeats: 0
-  blender: {fileID: 973177640}
+  PM: {fileID: 1868670951}
 --- !u!4 &1823251241
 Transform:
   m_ObjectHideFlags: 0
@@ -2253,6 +2247,8 @@ GameObject:
   - component: {fileID: 1868670954}
   - component: {fileID: 1868670953}
   - component: {fileID: 1868670952}
+  - component: {fileID: 1868670955}
+  - component: {fileID: 1868670951}
   - component: {fileID: 1868670950}
   m_Layer: 0
   m_Name: Cube
@@ -2374,6 +2370,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1868670951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1868670948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b807deaa9352f4d44bad6dba0315827b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  percentageHitValues:
+  - percentValue: 60
+    numHits: 20
+  - percentValue: 80
+    numHits: 40
+  - percentValue: 100
+    numHits: 1000
+  pointTrackers:
+  - {fileID: 600536143}
+  - {fileID: 1823251240}
+  - {fileID: 1212597144}
+  blender: {fileID: 1868670955}
 --- !u!65 &1868670952
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2431,6 +2450,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1868670948}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1868670955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1868670948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17281c0a594767148b81d55ea1180e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shape: {fileID: 977374862}
 --- !u!4 &1960487584 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4866596759909932, guid: 05f295c5e2339e64382c21f1d61287ec,

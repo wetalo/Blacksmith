@@ -29,8 +29,7 @@ public class Beat : MonoBehaviour {
     SongNode currentNode;
     int currentNodeIndex;
     float nextTimestamp;
-
-    public Text nodeIndexText;
+    
     public PointTracker tracker;
 
 	// Use this for initialization
@@ -46,8 +45,6 @@ public class Beat : MonoBehaviour {
     {
         currentNode = songNodes.nodes[nodeIndex];
         nextTimestamp = currentNode.floatTimestamp;
-
-        nodeIndexText.text = "Node: " + (nodeIndex + 1);
     }
 
     public void StartSong()
