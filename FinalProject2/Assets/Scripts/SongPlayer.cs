@@ -37,12 +37,11 @@ public class SongPlayer : MonoBehaviour {
         player.StartPlayingMusic();
         isPlayingSong = true;
 
-        PM.StartSong();
-
         beat1.StartSong();
         beat2.StartSong();
         beat3.StartSong();
 
+        PM.StartSong();
     }
 
     private void OnTriggerEnter(Collider other)

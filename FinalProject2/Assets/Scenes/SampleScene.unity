@@ -2387,8 +2387,6 @@ MonoBehaviour:
     numHits: 20
   - percentValue: 80
     numHits: 40
-  - percentValue: 100
-    numHits: 1000
   pointTrackers:
   - {fileID: 600536143}
   - {fileID: 1823251240}
