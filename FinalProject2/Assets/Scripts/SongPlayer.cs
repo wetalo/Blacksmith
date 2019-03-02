@@ -5,6 +5,7 @@ using UnityEngine;
 public class SongPlayer : MonoBehaviour {
     
     public MusicPlayer player;
+    public PointManager PM;
 
     public Beat beat1;
     public Beat beat2;
@@ -35,6 +36,8 @@ public class SongPlayer : MonoBehaviour {
         //ScriptableObject.CreateInstance("SongNodes");
         player.StartPlayingMusic();
         isPlayingSong = true;
+
+        PM.StartSong();
 
         beat1.StartSong();
         beat2.StartSong();

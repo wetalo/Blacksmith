@@ -67,4 +67,10 @@ public class PointManager : MonoBehaviour {
     {
         blender.BadHit(((float)100) / ((float)totalBeatNodes));
     }
+
+    public void StartSong()
+    {
+        CalculateHitBlendValue(percentValueIndex);
+        CalculateTotals();
+    }
 }

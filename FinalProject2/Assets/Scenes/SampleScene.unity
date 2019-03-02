@@ -1419,6 +1419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1058046771}
+  PM: {fileID: 1868670951}
   beat1: {fileID: 600536142}
   beat2: {fileID: 1823251239}
   beat3: {fileID: 1212597143}
@@ -2382,7 +2383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   percentageHitValues:
-  - percentValue: 60
+  - percentValue: 50
     numHits: 20
   - percentValue: 80
     numHits: 40
