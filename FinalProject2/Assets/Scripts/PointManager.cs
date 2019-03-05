@@ -33,6 +33,10 @@ public class PointManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         debugText = GameObject.Find("DebugText").GetComponent<Text>();
+        foreach (PointTracker tracker in pointTrackers)
+        {
+            tracker.Disable();
+        }
     }
 	
 	// Update is called once per frame
@@ -95,7 +99,7 @@ public class PointManager : MonoBehaviour {
 
         foreach (PointTracker tracker in pointTrackers)
         {
-            tracker.isEnabled = false;
+            tracker.Disable();
         }
 
         CalculateHitBlendValue(percentValueIndex);

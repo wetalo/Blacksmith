@@ -844,6 +844,11 @@ Prefab:
       propertyPath: shape
       value: 
       objectReference: {fileID: 977374862}
+    - target: {fileID: 23534379276302056, guid: 05f295c5e2339e64382c21f1d61287ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114167898037618890, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
@@ -1071,53 +1076,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4501332823466352, guid: 05f295c5e2339e64382c21f1d61287ec,
     type: 2}
   m_PrefabInternal: {fileID: 1329538999}
---- !u!1 &943622835
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 943622837}
-  - component: {fileID: 943622836}
-  m_Layer: 0
-  m_Name: EasyColliderEditor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &943622836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 943622835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99990757fb62d3a4eb1bf0a7c80cf786, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  editorWindow: {fileID: 0}
-  SelectedGameObject: {fileID: 0}
-  SelectVertByRaycast: 0
-  SelectColliderByRaycast: 0
-  IsTrigger: 0
-  SelectedCollider: {fileID: 0}
-  DrawVertices: 0
---- !u!4 &943622837
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 943622835}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &966053604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,6 +1641,11 @@ Prefab:
       propertyPath: hitboxIndex
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 23534379276302056, guid: 05f295c5e2339e64382c21f1d61287ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114167898037618890, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
@@ -1761,6 +1724,11 @@ Prefab:
         type: 2}
       propertyPath: hitboxIndex
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23534379276302056, guid: 05f295c5e2339e64382c21f1d61287ec,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114167898037618890, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
