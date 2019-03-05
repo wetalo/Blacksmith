@@ -348,6 +348,7 @@
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceModContext.cs" />
     <Compile Include="Assets\Scripts\Beat.cs" />
     <Compile Include="Assets\Scripts\BucketTrigger.cs" />
+    <Compile Include="Assets\Scripts\EditorScripts\SongEditor.cs" />
     <Compile Include="Assets\Scripts\Expander.cs" />
     <Compile Include="Assets\Scripts\LifeTime.cs" />
     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
