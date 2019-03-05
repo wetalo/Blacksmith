@@ -15,6 +15,8 @@ public class PointTracker : MonoBehaviour {
 
     public int totalBeats;
     public PointManager PM;
+    public bool isEnabled;
+    public GameObject whiteCircle;
 
 	void Start() {
         score = 0;
@@ -61,19 +63,34 @@ public class PointTracker : MonoBehaviour {
 
     public void TakeHit()
     {
-        if (isValid)
+        if (isEnabled)
         {
-            AddPoint();
-        } else
-        {
-            AddFalseHit();
+            if (isValid)
+            {
+                AddPoint();
+            } else
+            {
+                AddFalseHit();
+            }
+            tookHit = true;
         }
-        tookHit = true;
         UpdateUI();
     }
 
     void UpdateUI()
     {
         pointTrackerText.text = "Hits: " + score + "\n" + "False hits: " + falseHits + "\n" + "Misses: " + misses;
+    }
+
+    public void Enable()
+    {
+        this.isEnabled = true;
+        whiteCircle.SetActive(true);
+    }
+
+    public void Disable()
+    {
+        this.isEnabled = false;
+        whiteCircle.SetActive(false);
     }
 }

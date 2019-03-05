@@ -31,6 +31,7 @@ public class Beat : MonoBehaviour {
     float nextTimestamp;
     
     public PointTracker tracker;
+    public bool isEnabled;
 
 	// Use this for initialization
 	void Start () {
@@ -78,6 +79,8 @@ public class Beat : MonoBehaviour {
         expander.targetCircle = transform;
         expander.leeWay = this.leeWay;
         expander.tracker = tracker;
+
+        expander.SetEnabled(this.isEnabled);
     }
 
     //Deprecated code, keeping for sentimental value <3

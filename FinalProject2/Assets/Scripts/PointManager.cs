@@ -16,6 +16,7 @@ public class PointManager : MonoBehaviour {
     PercentageValues currentValue;
     int percentValueIndex = 0;
     public PointTracker[] pointTrackers;
+    public Beat[] beats;
     public SwordBlend blender;
 
     float currentPercent = 100;
@@ -51,6 +52,14 @@ public class PointManager : MonoBehaviour {
         {
             hitBlendValue = (100- currentValue.percentValue) / ((float)(totalBeatNodes - currentValue.numHits));
         }
+        if (!pointTrackers[index].isEnabled)
+        {
+            pointTrackers[index].Enable();
+        }
+        if (!beats[index].isEnabled)
+        {
+            beats[index].isEnabled = true;
+        }
     }
 
     void CalculateTotals()
@@ -83,6 +92,11 @@ public class PointManager : MonoBehaviour {
         percentValueIndex = 0;
         blendAmount = 0;
         totalHits = 0;
+
+        foreach (PointTracker tracker in pointTrackers)
+        {
+            tracker.isEnabled = false;
+        }
 
         CalculateHitBlendValue(percentValueIndex);
         CalculateTotals();

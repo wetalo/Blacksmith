@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 [System.Serializable]
 struct EditableNode
@@ -89,16 +90,19 @@ public class SongGenerator : MonoBehaviour {
     {
         if (beat1.edit)
         {
+            EditorUtility.SetDirty(beat1.beat);
             beat1.beat.nodes = new List<SongNode>();
         }
 
         if (beat2.edit)
         {
+            EditorUtility.SetDirty(beat2.beat);
             beat2.beat.nodes = new List<SongNode>();
         }
 
         if (beat3.edit)
         {
+            EditorUtility.SetDirty(beat3.beat);
             beat3.beat.nodes = new List<SongNode>();
         }
 

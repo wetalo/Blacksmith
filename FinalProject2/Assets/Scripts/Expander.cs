@@ -15,6 +15,7 @@ public class Expander : MonoBehaviour {
     Vector3 initialScale;
 
     public PointTracker tracker;
+    public bool isEnabled;
     
     // Use this for initialization
     void Start () {
@@ -44,6 +45,15 @@ public class Expander : MonoBehaviour {
         {
             tracker.EndHitTime();
             Destroy(gameObject);
+        }
+    }
+
+    public void SetEnabled(bool isEnabled)
+    {
+        this.isEnabled = isEnabled;
+        if (!isEnabled)
+        {
+            GetComponent<Renderer>().enabled = false;
         }
     }
 }

@@ -13,22 +13,106 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - minute: 0
-    second: 1
-    centisecond: 23
-    floatTimestamp: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 27.02042
   - minute: 0
     second: 0
     centisecond: 0
-    floatTimestamp: 0
+    floatTimestamp: 27.342876
   - minute: 0
     second: 0
     centisecond: 0
-    floatTimestamp: 0
+    floatTimestamp: 29.621952
   - minute: 0
     second: 0
     centisecond: 0
-    floatTimestamp: 0
+    floatTimestamp: 29.942503
   - minute: 0
     second: 0
     centisecond: 0
-    floatTimestamp: 0
+    floatTimestamp: 34.59806
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 34.92044
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 39.652634
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 43.721172
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 46.475456
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 53.85291
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 55.343533
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 55.663635
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 57.619503
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 57.94182
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 58.019085
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 60.175278
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 60.541718
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 63.142326
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 63.55308
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 65.276054
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 65.597015
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 67.84231
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 68.19778
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 69.89739
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 72.941345
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 73.26312
