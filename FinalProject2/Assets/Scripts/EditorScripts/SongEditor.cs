@@ -15,6 +15,7 @@ public class SongEditor : EditorWindow {
 
     void OnGUI()
     {
+        
         EditorGUILayout.CurveField(curve);
         nodes = EditorGUILayout.ObjectField("", nodes, typeof(SongNodes), true) as SongNodes;
 
@@ -47,6 +48,11 @@ public class SongEditor : EditorWindow {
 
     void ClearGraph()
     {
+
+        if (curve == null)
+        {
+            curve = new AnimationCurve();
+        }
         for (int i = curve.keys.Length - 1; i >= 0; i--)
         {
             curve.RemoveKey(i);
