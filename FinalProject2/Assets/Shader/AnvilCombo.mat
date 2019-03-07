@@ -19,5 +19,6 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - _AnvilGradient: 0.554
+    - Vector1_CA1DB03B: 0.5
+    - _AnvilGradient: 0
     m_Colors: []
