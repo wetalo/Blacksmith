@@ -20,5 +20,5 @@ Material:
     m_TexEnvs: []
     m_Floats:
     - Vector1_CA1DB03B: 0.5
-    - _AnvilGradient: 0.5
+    - _AnvilGradient: 1
     m_Colors: []
