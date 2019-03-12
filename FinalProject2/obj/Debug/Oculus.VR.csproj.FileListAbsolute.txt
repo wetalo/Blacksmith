@@ -189,3 +189,4 @@ D:\UnityProjects\GitHub\Blacksmith\FinalProject2\obj\Debug\Oculus.VR.csproj.Core
 D:\UnityProjects\GitHub\Blacksmith\FinalProject2\obj\Debug\Oculus.VR.csproj.CopyComplete
 D:\UnityProjects\GitHub\Blacksmith\FinalProject2\obj\Debug\Oculus.VR.dll
 D:\UnityProjects\GitHub\Blacksmith\FinalProject2\obj\Debug\Oculus.VR.pdb
+D:\UnityProjects\GitHub\Blacksmith\FinalProject2\Temp\bin\Debug\ICSharpCode.NRefactory.dll

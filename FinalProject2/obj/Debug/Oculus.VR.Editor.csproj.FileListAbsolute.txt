@@ -192,3 +192,4 @@ D:\UnityProjects\GitHub\Blacksmith\FinalProject2\obj\Debug\Oculus.VR.Editor.cspr
 D:\UnityProjects\GitHub\Blacksmith\FinalProject2\obj\Debug\Oculus.VR.Editor.csproj.CopyComplete
 D:\UnityProjects\GitHub\Blacksmith\FinalProject2\obj\Debug\Oculus.VR.Editor.dll
 D:\UnityProjects\GitHub\Blacksmith\FinalProject2\obj\Debug\Oculus.VR.Editor.pdb
+D:\UnityProjects\GitHub\Blacksmith\FinalProject2\Temp\bin\Debug\ICSharpCode.NRefactory.dll

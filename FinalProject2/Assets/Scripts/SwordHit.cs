@@ -24,7 +24,16 @@ public class SwordHit : MonoBehaviour {
     {
         if(other.tag == "HammerHead")
         {
-            tracker.TakeHit();
+            string handHoldingHammer = other.transform.parent.gameObject.GetComponent<OVRGrabbable>().grabbedBy.ToString();
+            if(handHoldingHammer == "AvatarGrabberRight (OVRGrabber)")
+            {
+                ControllerManager.CM.StartVibration(1, 1, 0.1f, OVRInput.Controller.RTouch);
+            } else if (handHoldingHammer == "AvatarGrabberLeft (OVRGrabber)")
+            {
+                ControllerManager.CM.StartVibration(1, 1, 0.1f, OVRInput.Controller.LTouch);
+            }
+
+                tracker.TakeHit();
             generator.TakeHit(hitboxIndex);
             GameObject hitInstance = GameObject.Instantiate(hitParticle, other.ClosestPointOnBounds(transform.position), Quaternion.identity);
             hitInstance.transform.rotation = Quaternion.LookRotation(transform.up,Vector3.up);
