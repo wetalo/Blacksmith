@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -988,7 +988,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.191
+      value: 2.662
       objectReference: {fileID: 0}
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalPosition.y
@@ -996,7 +996,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.413
+      value: 1.762
       objectReference: {fileID: 0}
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1611,53 +1611,6 @@ Prefab:
     - {fileID: 114167898037618890, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 05f295c5e2339e64382c21f1d61287ec, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1483069554
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1483069556}
-  - component: {fileID: 1483069555}
-  m_Layer: 0
-  m_Name: EasyColliderEditor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1483069555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1483069554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99990757fb62d3a4eb1bf0a7c80cf786, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  editorWindow: {fileID: 0}
-  SelectedGameObject: {fileID: 0}
-  SelectVertByRaycast: 0
-  SelectColliderByRaycast: 0
-  IsTrigger: 0
-  SelectedCollider: {fileID: 0}
-  DrawVertices: 0
---- !u!4 &1483069556
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1483069554}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1590483304
 GameObject:
   m_ObjectHideFlags: 0
