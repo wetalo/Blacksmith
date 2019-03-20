@@ -369,6 +369,12 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="SonicBloom.Koreo.EditorUI">
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Assets/Plugins/Editor/Koreographer/SonicBloom.Koreo.EditorUI.dll</HintPath>
+    </Reference>
+    <Reference Include="SonicBloom.Koreo">
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Assets/Plugins/Koreographer/Unity Editor/SonicBloom.Koreo.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/Swieca/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>

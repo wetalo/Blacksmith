@@ -65,6 +65,12 @@
     <Compile Include="Assets\EasyColliderEditor\Scripts\EasyColliderPreferences.cs" />
     <Compile Include="Assets\EasyColliderEditor\Scripts\MeshListBuilder.cs" />
     <Compile Include="Assets\EasyColliderEditor\Scripts\MeshTransform.cs" />
+    <Compile Include="Assets\Koreographer\Demos\Scripts\CubeScaler.cs" />
+    <Compile Include="Assets\Koreographer\Demos\Scripts\EmitParticlesOnSpan.cs" />
+    <Compile Include="Assets\Koreographer\Demos\Scripts\MusicalImpulse.cs" />
+    <Compile Include="Assets\Koreographer\Demos\Scripts\TempoSwitch.cs" />
+    <Compile Include="Assets\Koreographer\Demos\Scripts\UIMessageSetter.cs" />
+    <Compile Include="Assets\Koreography\NewBehaviourScript.cs" />
     <Compile Include="Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
@@ -365,6 +371,7 @@
     <Compile Include="Assets\Scripts\Teleporter\Teleporter.cs" />
     <Compile Include="Assets\Scripts\Teleporter\TeleporterButton.cs" />
     <Compile Include="Assets\Scripts\Teleporter\TeleporterHitbox.cs" />
+    <Compile Include="Assets\Shader\Ripple.cs" />
     <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarMaterialStateShader.cginc" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Materials\Hands_DiffBump.shader" />
@@ -386,6 +393,7 @@
     <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarSurfaceShaderPBSV2.shader" />
     <None Include="Assets\Lava_Flowing_Shader\ReadMe.txt" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_Mobile_CombinedMesh.shader" />
+    <None Include="Assets\Koreographer\ReadMe.txt" />
     <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarSurfaceShaderPBS.shader" />
     <None Include="Assets\Oculus\SampleFramework\Core\CustomHands\Shaders\Hands_01.shader" />
     <None Include="Assets\Shader\Additive_Base.shader" />
@@ -631,6 +639,9 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="SonicBloom.Koreo">
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Assets/Plugins/Koreographer/Unity Editor/SonicBloom.Koreo.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/Swieca/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>

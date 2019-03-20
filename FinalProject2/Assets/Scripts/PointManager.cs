@@ -66,6 +66,14 @@ public class PointManager : MonoBehaviour {
         }
     }
 
+    public void EnableAll()
+    {
+        foreach(PointTracker tracker in pointTrackers)
+        {
+            tracker.Enable();
+        }
+    }
+
     void CalculateTotals()
     {
         totalBeatNodes = 0;

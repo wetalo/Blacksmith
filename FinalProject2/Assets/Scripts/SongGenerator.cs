@@ -18,6 +18,7 @@ public class SongGenerator : MonoBehaviour {
     [SerializeField]
     EditableNode beat3;
     public MusicPlayer player;
+    public PointManager manager;
 
 
     bool isPlayingSong;
@@ -88,6 +89,8 @@ public class SongGenerator : MonoBehaviour {
 
     public void CreateSong()
     {
+        manager.EnableAll();
+
         if (beat1.edit)
         {
             EditorUtility.SetDirty(beat1.beat);
@@ -105,6 +108,8 @@ public class SongGenerator : MonoBehaviour {
             EditorUtility.SetDirty(beat3.beat);
             beat3.beat.nodes = new List<SongNode>();
         }
+
+
 
         //ScriptableObject.CreateInstance("SongNodes");
         player.StartPlayingMusic();
