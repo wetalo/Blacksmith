@@ -371,6 +371,8 @@
     <Compile Include="Assets\Scripts\Teleporter\Teleporter.cs" />
     <Compile Include="Assets\Scripts\Teleporter\TeleporterButton.cs" />
     <Compile Include="Assets\Scripts\Teleporter\TeleporterHitbox.cs" />
+    <Compile Include="Assets\Scripts\Variables\FloatReference.cs" />
+    <Compile Include="Assets\Scripts\Variables\FloatVariable.cs" />
     <Compile Include="Assets\Shader\Ripple.cs" />
     <None Include="Assets\Oculus\Avatar\Content\Materials\AvatarMaterialStateShader.cginc" />
     <None Include="Assets\Oculus\Avatar\Resources\Materials\Version1.5\Avatar_PC_SingleComponent.shader" />
