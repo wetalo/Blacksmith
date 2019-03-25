@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour {
 
-    AudioSource audioSource;
+    public AudioSource audioSource;
     public bool isPlayingSong;
 
 	// Use this for initialization

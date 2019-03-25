@@ -30,6 +30,8 @@ public class PointManager : MonoBehaviour {
     float hitBlendValue;
 
     Text debugText;
+
+    public Text pointsUI;
     // Use this for initialization
     void Start () {
         debugText = GameObject.Find("DebugText").GetComponent<Text>();
@@ -116,11 +118,14 @@ public class PointManager : MonoBehaviour {
 
     void PrintUI()
     {
+        /*
         debugText.text =
             "totalBeatNodes: " + totalBeatNodes + "\n" +
             "totalHits: " + totalHits + "\n" +
             "blendAmount: " + blendAmount + "\n" +
             "hitBlendValue: " + hitBlendValue + "\n" +
-            "currentValue.percentValue: " + currentValue.percentValue;
+            "currentValue.percentValue: " + currentValue.percentValue; */
+
+        pointsUI.text = "" + totalHits + " / " + totalBeatNodes;
     }
 }

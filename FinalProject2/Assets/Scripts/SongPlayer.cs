@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SongPlayer : MonoBehaviour {
     
@@ -13,6 +14,8 @@ public class SongPlayer : MonoBehaviour {
     bool isPlayingSong;
 
     float timer;
+    public Text timeLeftText;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -25,9 +28,15 @@ public class SongPlayer : MonoBehaviour {
             if (!player.isPlayingSong)
             {
                 isPlayingSong = false;
+            } else
+            {
+               int timeleft = (int)((player.audioSource.clip.length - player.audioSource.time));
+                timeLeftText.text = "" + timeleft + "s";
             }
 
             timer += Time.deltaTime;
+
+            
         }
 	}
 
