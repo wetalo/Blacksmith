@@ -11,4 +11,684 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f0c3e10ee5296f47a3b46ae9ec4f385, type: 3}
   m_Name: Node 1
   m_EditorClassIdentifier: 
-  nodes: []
+  nodes:
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 5.499994
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 6.111474
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 6.7999
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 7.410931
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 7.7774835
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 8.132881
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 8.777475
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 9.410773
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 10.110754
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 10.499741
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 10.832619
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 11.477174
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 12.110589
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 12.810856
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 13.199583
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 13.510599
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 14.155243
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 14.777317
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 16.155243
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 16.810776
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 17.311798
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 17.799532
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 18.799732
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 19.433079
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 19.954983
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 20.41069
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 20.80057
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 21.499798
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 22.133072
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 22.63306
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 23.110693
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 24.110615
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 25.277525
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 25.777405
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 26.754986
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 27.877287
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 28.455208
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 29.433111
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 30.611097
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 31.13302
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 32.11033
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 33.277885
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 33.77776
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 34.75493
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 35.89982
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 36.455013
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 37.499325
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 38.6212
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 39.12129
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 40.11058
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 41.310448
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 41.799873
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 42.810905
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 43.955395
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 44.455334
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 45.48904
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 48.110428
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 50.832832
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 51.477543
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 52.13289
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 52.79963
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 56.432945
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 57.110867
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 57.777992
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 58.432983
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 60.055214
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 61.47739
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 62.11073
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 62.77747
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 63.45556
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 66.07735
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 66.79955
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 67.47704
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 68.076775
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 68.71027
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 69.411064
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 72.11109
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 74.75545
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 75.821
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 77.51069
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 78.57732
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 80.132996
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 81.23316
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 81.73289
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 82.77757
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 83.95565
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 84.432915
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 85.499664
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 88.11081
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 89.30006
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 89.8108
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 90.80002
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 91.95502
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 92.45503
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 93.49945
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 94.5997
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 95.17747
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 96.17757
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 97.411
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 100.0993
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 101.51064
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 101.81057
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 102.15521
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 102.477425
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 102.77754
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 103.09959
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 103.41062
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 103.73295
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 106.79994
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 111.299675
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 112.11105
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 125.45583
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 126.57721
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 127.1104
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 128.155
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 129.211
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 129.79976
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 130.7772
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 131.95518
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 132.4551
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 133.45523
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 134.699
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 135.19913
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 136.13269
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 137.25508
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 137.77759
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 141.47743
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 142.59981
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 143.05513
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 144.13248
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 146.8107
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 149.61081
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 150.91098
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 152.2108
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 152.82138
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 153.43257
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 154.09953
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 157.45493
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 159.45648
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 160.11087
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 160.77737
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 161.43307
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 162.13203
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 162.79947
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 163.27705
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 164.09933
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 164.4993
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 165.43298
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 165.93283
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 166.71077
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 167.27734
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 168.11075
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 170.75525
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 173.47745
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 174.12164
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 174.77736
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 178.75557
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 179.41042
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 180.09946
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 180.73074
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 181.43146
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 184.09941
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 184.7328
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 185.39919
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 186.07716
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 189.43286
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 190.75446
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 192.11046
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 194.77856
+  - minute: 0
+    second: 0
+    centisecond: 0
+    floatTimestamp: 195.0215
