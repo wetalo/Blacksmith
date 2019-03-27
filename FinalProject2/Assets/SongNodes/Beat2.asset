@@ -31,10 +31,6 @@ MonoBehaviour:
   - minute: 0
     second: 0
     centisecond: 0
-    floatTimestamp: 9.638117
-  - minute: 0
-    second: 0
-    centisecond: 0
     floatTimestamp: 9.671489
   - minute: 0
     second: 0
