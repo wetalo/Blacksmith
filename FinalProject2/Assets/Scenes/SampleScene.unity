@@ -808,7 +808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatsPerMinute: 60
-  delayBeforeSound: 0.1
+  delayBeforeSound: 0.3
   red: {fileID: 2100000, guid: 37ad8508a0c4fe84890466d90d3c978c, type: 2}
   green: {fileID: 2100000, guid: 59bb84220f75dec47887f37c498a1756, type: 2}
   leeWay: 0.2
@@ -1928,7 +1928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatsPerMinute: 60
-  delayBeforeSound: 0.1
+  delayBeforeSound: 0.3
   red: {fileID: 2100000, guid: 37ad8508a0c4fe84890466d90d3c978c, type: 2}
   green: {fileID: 2100000, guid: 59bb84220f75dec47887f37c498a1756, type: 2}
   leeWay: 0.2
@@ -2881,7 +2881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatsPerMinute: 60
-  delayBeforeSound: 0.1
+  delayBeforeSound: 0.3
   red: {fileID: 2100000, guid: 37ad8508a0c4fe84890466d90d3c978c, type: 2}
   green: {fileID: 2100000, guid: 59bb84220f75dec47887f37c498a1756, type: 2}
   leeWay: 0.2
