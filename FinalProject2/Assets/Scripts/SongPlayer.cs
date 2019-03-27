@@ -16,6 +16,8 @@ public class SongPlayer : MonoBehaviour {
     float timer;
     public Text timeLeftText;
 
+    public bool enableAll;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -43,6 +45,9 @@ public class SongPlayer : MonoBehaviour {
     public void PlaySong()
     {
         //ScriptableObject.CreateInstance("SongNodes");
+
+       
+
         player.StartPlayingMusic();
         isPlayingSong = true;
 
@@ -51,6 +56,11 @@ public class SongPlayer : MonoBehaviour {
         beat3.StartSong();
 
         PM.StartSong();
+
+        if (enableAll)
+        {
+            PM.EnableAll();
+        }
     }
 
     private void OnTriggerEnter(Collider other)

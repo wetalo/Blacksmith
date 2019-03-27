@@ -90,7 +90,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2194,31 +2194,31 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 9.335
+      value: 9.011
       objectReference: {fileID: 0}
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.76
+      value: 0.53999996
       objectReference: {fileID: 0}
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.454
+      value: -0.767
       objectReference: {fileID: 0}
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.8503391
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.5262352
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_RootOrder
@@ -2226,7 +2226,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 116.49701
+      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
@@ -3068,6 +3068,7 @@ MonoBehaviour:
   beat2: {fileID: 1823251239}
   beat3: {fileID: 1212597143}
   timeLeftText: {fileID: 106856774}
+  enableAll: 1
 --- !u!65 &1160071068
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5311,6 +5312,53 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62ba3f8f17190cf4e89c506e66c72c6b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1947226682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1947226684}
+  - component: {fileID: 1947226683}
+  m_Layer: 0
+  m_Name: EasyColliderEditor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1947226683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1947226682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99990757fb62d3a4eb1bf0a7c80cf786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  editorWindow: {fileID: 0}
+  SelectedGameObject: {fileID: 0}
+  SelectVertByRaycast: 0
+  SelectColliderByRaycast: 0
+  IsTrigger: 0
+  SelectedCollider: {fileID: 0}
+  DrawVertices: 0
+--- !u!4 &1947226684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1947226682}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1960010643
 GameObject:
   m_ObjectHideFlags: 0
