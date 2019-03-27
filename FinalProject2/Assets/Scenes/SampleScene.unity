@@ -808,7 +808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatsPerMinute: 60
-  delayBeforeSound: 0.1
+  delayBeforeSound: 0.3
   red: {fileID: 2100000, guid: 37ad8508a0c4fe84890466d90d3c978c, type: 2}
   green: {fileID: 2100000, guid: 59bb84220f75dec47887f37c498a1756, type: 2}
   leeWay: 0.2
@@ -1330,15 +1330,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.658
+      value: 2.81
       objectReference: {fileID: 0}
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.379
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2.265
+      value: 2.06
       objectReference: {fileID: 0}
     - target: {fileID: 4720190999442226, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1928,7 +1928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatsPerMinute: 60
-  delayBeforeSound: 0.1
+  delayBeforeSound: 0.3
   red: {fileID: 2100000, guid: 37ad8508a0c4fe84890466d90d3c978c, type: 2}
   green: {fileID: 2100000, guid: 59bb84220f75dec47887f37c498a1756, type: 2}
   leeWay: 0.2
@@ -2881,7 +2881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beatsPerMinute: 60
-  delayBeforeSound: 0.1
+  delayBeforeSound: 0.3
   red: {fileID: 2100000, guid: 37ad8508a0c4fe84890466d90d3c978c, type: 2}
   green: {fileID: 2100000, guid: 59bb84220f75dec47887f37c498a1756, type: 2}
   leeWay: 0.2
