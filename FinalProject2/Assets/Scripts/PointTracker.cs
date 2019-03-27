@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class PointTracker : MonoBehaviour {
 
-    private int score;
-    private int misses;
-    private int falseHits;
+    public int score;
+    public int misses;
+    public int falseHits;
 
     bool isValid;
     bool tookHit;

@@ -126,9 +126,14 @@ public class PointManager : MonoBehaviour {
             "hitBlendValue: " + hitBlendValue + "\n" +
             "currentValue.percentValue: " + currentValue.percentValue; */
 
+        int numMisses = 0;
+        foreach (PointTracker tracker in pointTrackers)
+        {
+            numMisses += tracker.misses;
+        }
 
         pointsUI.text =
-           "" + totalHits + " / " + totalBeatNodes
-        + "\n\n" + "Misses:  " + (totalFalseHits + totalMisses);
+           "" + totalHits + " / " + totalBeatNodes;
+        //+ "\n\n" + "Misses:  " + numMisses;
     }
 }
