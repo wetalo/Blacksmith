@@ -18,9 +18,19 @@ public class SongPlayer : MonoBehaviour {
 
     public bool enableAll;
 
+    AudioSource metronome;
+
+    public float bpm;
+    float timeBetweenMetronomeHits;
+
+    public int numTimesToTick = 4;
+    int tickCounter = 0;
+    bool isPlayingMetronome = false;
+
 	// Use this for initialization
 	void Start () {
-		
+        timeBetweenMetronomeHits = (1 / bpm) * 60;
+        metronome = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -39,6 +49,21 @@ public class SongPlayer : MonoBehaviour {
             timer += Time.deltaTime;
 
             
+        } else if (isPlayingMetronome)
+        {
+            timer += Time.deltaTime;
+            if(timer > timeBetweenMetronomeHits)
+            {
+                metronome.Play();
+                timer = 0f;
+                tickCounter++;
+            }
+
+            if(tickCounter >= 4)
+            {
+                isPlayingMetronome = false;
+                PlaySong();
+            }
         }
 	}
 
@@ -46,7 +71,7 @@ public class SongPlayer : MonoBehaviour {
     {
         //ScriptableObject.CreateInstance("SongNodes");
 
-       
+        timer = 0f;
 
         player.StartPlayingMusic();
         isPlayingSong = true;
@@ -63,11 +88,19 @@ public class SongPlayer : MonoBehaviour {
         }
     }
 
+    private void PlayMetronome()
+    {
+        timer = 0f;
+        tickCounter = 0;
+        isPlayingMetronome = true;
+
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "HammerHead")
         {
-            PlaySong();
+            PlayMetronome();
         }
     }
 }
