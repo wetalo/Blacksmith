@@ -126,6 +126,9 @@ public class PointManager : MonoBehaviour {
             "hitBlendValue: " + hitBlendValue + "\n" +
             "currentValue.percentValue: " + currentValue.percentValue; */
 
-        pointsUI.text = "" + totalHits + " / " + totalBeatNodes;
+
+        pointsUI.text =
+           "" + totalHits + " / " + totalBeatNodes
+        + "\n\n" + "Misses:  " + (totalFalseHits + totalMisses);
     }
 }
