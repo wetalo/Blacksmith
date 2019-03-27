@@ -357,6 +357,7 @@
     <Compile Include="Assets\Scripts\ControllerManager.cs" />
     <Compile Include="Assets\Scripts\EditorScripts\SongEditor.cs" />
     <Compile Include="Assets\Scripts\Expander.cs" />
+    <Compile Include="Assets\Scripts\FixedScale.cs" />
     <Compile Include="Assets\Scripts\LifeTime.cs" />
     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\OVRHandMaterialAssignment.cs" />
