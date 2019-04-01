@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using SonicBloom.Koreo;
 
 public class Beat : MonoBehaviour {
 
@@ -13,8 +14,7 @@ public class Beat : MonoBehaviour {
     public Material green;
 
     Renderer renderer;
-
-    float timer;
+    
 
     bool isOn;
     AudioSource sound;
@@ -25,50 +25,35 @@ public class Beat : MonoBehaviour {
     public GameObject expandingCirclePrefab;
     public Transform targetCircle;
 
-    public SongNodes songNodes;
-    SongNode currentNode;
-    int currentNodeIndex;
-    float nextTimestamp;
     
     public PointTracker tracker;
     public bool isEnabled;
 
+    public string koreographerEventID;
+
 	// Use this for initialization
 	void Start () {
         renderer = GetComponent<Renderer>();
-        timer = 0f;
         sound = GetComponent<AudioSource>();
 
-        
-	}
-
-    void SetupNode(int nodeIndex)
-    {
-        currentNode = songNodes.nodes[nodeIndex];
-        nextTimestamp = currentNode.floatTimestamp;
+        Koreographer.Instance.RegisterForEvents(koreographerEventID, OnMusicalHit);
     }
+    
 
     public void StartSong()
     {
-        timer = 0f;
         isOn = true;
-        currentNodeIndex = 0;
-        tracker.totalBeats = songNodes.nodes.Count;
-        SetupNode(currentNodeIndex);
     }
-	
-	// Update is called once per frame
-	void Update () {
-        if (isOn)
-        {
-            timer += Time.deltaTime;
-            if (timer >= nextTimestamp-1)
-            {
-                MakeExpander();
-                currentNodeIndex++;
-                SetupNode(currentNodeIndex);
-            }
-        }
+
+
+    private void OnMusicalHit(KoreographyEvent evt)
+    {
+        Debug.Log("koreographerEventID: " + koreographerEventID);
+        MakeExpander();
+    }
+
+    // Update is called once per frame
+    void Update () {
 
 	}
 
