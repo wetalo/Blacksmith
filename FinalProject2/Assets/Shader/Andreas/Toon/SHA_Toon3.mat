@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SHA_Toon3
+  m_Shader: {fileID: 4800000, guid: a7db0a7f9e4897845ad04bc4b35778ba, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_A648A005:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_DF1D059F:
+        m_Texture: {fileID: 2800000, guid: 42e6ef88d254653478f942f8c876aa87, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_835BC922: 0
+    - Vector1_AD0B35AB: 0
+    - Vector1_BCF47E35: 0
+    m_Colors:
+    - Color_B74107DF: {r: 0.754717, g: 0.754717, b: 0.754717, a: 0}
+    - Color_B92AD40F: {r: 0.9528302, g: 0.663004, b: 0.1033731, a: 0}
