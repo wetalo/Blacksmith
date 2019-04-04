@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2026,53 +2026,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 548391638}
   m_Mesh: {fileID: 4300052, guid: d9c8005123d418a45bae301f653c1117, type: 3}
---- !u!1 &572234507
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 572234509}
-  - component: {fileID: 572234508}
-  m_Layer: 0
-  m_Name: EasyColliderEditor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &572234508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 572234507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99990757fb62d3a4eb1bf0a7c80cf786, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  editorWindow: {fileID: 0}
-  SelectedGameObject: {fileID: 0}
-  SelectVertByRaycast: 0
-  SelectColliderByRaycast: 0
-  IsTrigger: 0
-  SelectedCollider: {fileID: 0}
-  DrawVertices: 0
---- !u!4 &572234509
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 572234507}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 29
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &600536141
 GameObject:
   m_ObjectHideFlags: 0
@@ -2109,9 +2062,9 @@ MonoBehaviour:
   expandingCirclePrefab: {fileID: 1932040494618136, guid: eab6ef67d96fc1c47b46f7774d8cf12a,
     type: 2}
   targetCircle: {fileID: 1960487584}
-  songNodes: {fileID: 11400000, guid: 8ee15d29a77982948adb7b8ab2b7ac75, type: 2}
   tracker: {fileID: 600536143}
   isEnabled: 0
+  koreographerEventID: 
 --- !u!114 &600536143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4807,9 +4760,9 @@ MonoBehaviour:
   expandingCirclePrefab: {fileID: 1932040494618136, guid: eab6ef67d96fc1c47b46f7774d8cf12a,
     type: 2}
   targetCircle: {fileID: 856386423}
-  songNodes: {fileID: 11400000, guid: a55115bc1262b9249aba07fe24e21fe4, type: 2}
   tracker: {fileID: 1212597144}
   isEnabled: 0
+  koreographerEventID: 
 --- !u!114 &1212597144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7182,9 +7135,9 @@ MonoBehaviour:
   expandingCirclePrefab: {fileID: 1932040494618136, guid: eab6ef67d96fc1c47b46f7774d8cf12a,
     type: 2}
   targetCircle: {fileID: 1079043343}
-  songNodes: {fileID: 11400000, guid: c24ef57208378c148b2d9213177d20b2, type: 2}
   tracker: {fileID: 1823251240}
   isEnabled: 0
+  koreographerEventID: 
 --- !u!114 &1823251240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8992,14 +8945,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0091cd257c8fc1a41ab9ffe7b4f99164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  beat1:
-    beat: {fileID: 11400000, guid: 8ee15d29a77982948adb7b8ab2b7ac75, type: 2}
-    edit: 1
-  beat2:
-    beat: {fileID: 11400000, guid: c24ef57208378c148b2d9213177d20b2, type: 2}
-    edit: 1
-  beat3:
-    beat: {fileID: 11400000, guid: a55115bc1262b9249aba07fe24e21fe4, type: 2}
-    edit: 1
+  track1: {fileID: 0}
+  track2: {fileID: 0}
+  track3: {fileID: 0}
+  koreographer: {fileID: 0}
   player: {fileID: 1058046771}
   manager: {fileID: 1868670951}
