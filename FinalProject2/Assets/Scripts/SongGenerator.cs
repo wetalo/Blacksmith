@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using SonicBloom.Koreo;
 
 [System.Serializable]
 struct EditableNode
@@ -12,18 +13,20 @@ struct EditableNode
 public class SongGenerator : MonoBehaviour {
 
     [SerializeField]
-    EditableNode beat1;
+    KoreographyTrack track1;
     [SerializeField]
-    EditableNode beat2;
+    KoreographyTrack track2;
     [SerializeField]
-    EditableNode beat3;
+    KoreographyTrack track3;
+
+    [SerializeField]
+    Koreographer koreographer;
     public MusicPlayer player;
     public PointManager manager;
 
 
     bool isPlayingSong;
-
-    float timer;
+    
 	// Use this for initialization
 	void Start () {
 		
@@ -37,8 +40,7 @@ public class SongGenerator : MonoBehaviour {
             {
                 isPlayingSong = false;
             }
-
-            timer += Time.deltaTime;
+            
         }
 	}
 
@@ -46,44 +48,24 @@ public class SongGenerator : MonoBehaviour {
     {
         if (isPlayingSong)
         {
-            SongNodes songNodesToModify = new SongNodes();
+            KoreographyTrack track = null;
             switch (hitboxIndex)
             {
                 case SwordHitboxType.Box1:
-                    if (beat1.edit)
-                    {
-                        songNodesToModify = beat1.beat;
-                    } else
-                    {
-                        return;
-                    }
+                    track = track1;
                     break;
                 case SwordHitboxType.Box2:
-                    if (beat2.edit)
-                    {
-                        songNodesToModify = beat2.beat;
-                    }
-                    else
-                    {
-                        return;
-                    }
+                    track = track2;
                     break;
                 case SwordHitboxType.Box3:
-                    if (beat3.edit)
-                    {
-                        songNodesToModify = beat3.beat;
-                    }
-                    else
-                    {
-                        return;
-                    }
+                    track = track3;
                     break;
             }
-            
-            SongNode node = new SongNode();
-            node.floatTimestamp = timer;
 
-            songNodesToModify.nodes.Add(node);
+            KoreographyEvent koreographyEvent = new KoreographyEvent();
+            koreographyEvent.StartSample = koreographer.GetMusicSampleTime("m_envir_anvil");
+
+            track.AddEvent(koreographyEvent);
         }
     }
 
@@ -91,6 +73,7 @@ public class SongGenerator : MonoBehaviour {
     {
         manager.EnableAll();
 
+        /*
         if (beat1.edit)
         {
             EditorUtility.SetDirty(beat1.beat);
@@ -108,12 +91,14 @@ public class SongGenerator : MonoBehaviour {
             EditorUtility.SetDirty(beat3.beat);
             beat3.beat.nodes = new List<SongNode>();
         }
+        */
 
-
+        track1.RemoveAllEvents();
+        track2.RemoveAllEvents();
+        track3.RemoveAllEvents();
 
         //ScriptableObject.CreateInstance("SongNodes");
         player.StartPlayingMusic();
-        timer = 0f;
         isPlayingSong = true;
 
 

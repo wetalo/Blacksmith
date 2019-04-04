@@ -74,6 +74,10 @@ public class PointManager : MonoBehaviour {
         {
             tracker.Enable();
         }
+        foreach(Beat beat in beats)
+        {
+            beat.isEnabled = true;
+        }
     }
 
     void CalculateTotals()

@@ -182,3 +182,5 @@ D:\UnityProjects\GitHub\Blacksmith\FinalProject2\Temp\bin\Debug\Unity.ShaderGrap
 D:\UnityProjects\GitHub\Blacksmith\FinalProject2\Temp\bin\Debug\ICSharpCode.NRefactory.dll
 D:\UnityProjects\GitHub\Blacksmith\FinalProject2\Temp\bin\Debug\UnityEditor.Graphs.dll
 D:\UnityProjects\GitHub\Blacksmith\FinalProject2\Temp\bin\Debug\nunit.framework.dll
+D:\UnityProjects\GitHub\Blacksmith\FinalProject2\Temp\bin\Debug\SonicBloom.Koreo.dll
+D:\UnityProjects\GitHub\Blacksmith\FinalProject2\Temp\bin\Debug\SonicBloom.Koreo.xml

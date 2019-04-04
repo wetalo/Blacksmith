@@ -194,3 +194,7 @@ D:\UnityProjects\GitHub\Blacksmith\FinalProject2\obj\Debug\Oculus.VR.Scripts.Edi
 D:\UnityProjects\GitHub\Blacksmith\FinalProject2\obj\Debug\Oculus.VR.Scripts.Editor.dll
 D:\UnityProjects\GitHub\Blacksmith\FinalProject2\obj\Debug\Oculus.VR.Scripts.Editor.pdb
 D:\UnityProjects\GitHub\Blacksmith\FinalProject2\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\UnityProjects\GitHub\Blacksmith\FinalProject2\Temp\bin\Debug\SonicBloom.Koreo.dll
+D:\UnityProjects\GitHub\Blacksmith\FinalProject2\Temp\bin\Debug\SonicBloom.Koreo.EditorUI.dll
+D:\UnityProjects\GitHub\Blacksmith\FinalProject2\Temp\bin\Debug\SonicBloom.Koreo.EditorUI.xml
+D:\UnityProjects\GitHub\Blacksmith\FinalProject2\Temp\bin\Debug\SonicBloom.Koreo.xml

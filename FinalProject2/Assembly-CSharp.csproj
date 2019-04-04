@@ -70,7 +70,7 @@
     <Compile Include="Assets\Koreographer\Demos\Scripts\MusicalImpulse.cs" />
     <Compile Include="Assets\Koreographer\Demos\Scripts\TempoSwitch.cs" />
     <Compile Include="Assets\Koreographer\Demos\Scripts\UIMessageSetter.cs" />
-    <Compile Include="Assets\Koreography\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Koreography\PlayNodes.cs" />
     <Compile Include="Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scenes\Scripts\TestScript.cs" />
     <Compile Include="Assets\Oculus\AudioManager\Scripts\Audio\AmbienceEmitter.cs" />
