@@ -255,10 +255,20 @@ public class OVRGrabber : MonoBehaviour
             // Set up offsets for grabbed object desired position relative to hand.
             if(m_grabbedObj.snapPosition)
             {
-                if (m_grabbedObj.snapOffset)
+                if (m_grabbedObj.snapOffsetRight && this.name == "AvatarGrabberRight")
                 {
-                    Vector3 snapOffset = -m_grabbedObj.snapOffset.localPosition;
-                    Vector3 snapOffsetScale = m_grabbedObj.snapOffset.lossyScale;
+                    Vector3 snapOffset = -m_grabbedObj.snapOffsetRight.localPosition;
+                    Vector3 snapOffsetScale = m_grabbedObj.snapOffsetRight.lossyScale;
+                    snapOffset = new Vector3(snapOffset.x * snapOffsetScale.x, snapOffset.y * snapOffsetScale.y, snapOffset.z * snapOffsetScale.z);
+                    if (m_controller == OVRInput.Controller.LTouch)
+                    {
+                        snapOffset.x = -snapOffset.x;
+                    }
+                    m_grabbedObjectPosOff = snapOffset;
+                } else if (m_grabbedObj.snapOffsetLeft && this.name == "AvatarGrabberLeft")
+                {
+                    Vector3 snapOffset = -m_grabbedObj.snapOffsetLeft.localPosition;
+                    Vector3 snapOffsetScale = m_grabbedObj.snapOffsetLeft.lossyScale;
                     snapOffset = new Vector3(snapOffset.x * snapOffsetScale.x, snapOffset.y * snapOffsetScale.y, snapOffset.z * snapOffsetScale.z);
                     if (m_controller == OVRInput.Controller.LTouch)
                     {
@@ -280,9 +290,12 @@ public class OVRGrabber : MonoBehaviour
 
             if (m_grabbedObj.snapOrientation)
             {
-                if (m_grabbedObj.snapOffset)
+                if (m_grabbedObj.snapOffsetRight && this.name == "AvatarGrabberRight")
                 {
-                    m_grabbedObjectRotOff = Quaternion.Inverse(m_grabbedObj.snapOffset.localRotation);
+                    m_grabbedObjectRotOff = Quaternion.Inverse(m_grabbedObj.snapOffsetRight.localRotation);
+                } else if (m_grabbedObj.snapOffsetLeft && this.name == "AvatarGrabberLeft")
+                {
+                    m_grabbedObjectRotOff = Quaternion.Inverse(m_grabbedObj.snapOffsetLeft.localRotation);
                 }
                 else
                 {
