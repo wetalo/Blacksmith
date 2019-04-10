@@ -8,6 +8,7 @@ public class MusicPlayer : MonoBehaviour {
     public AudioSource audioSource;
     public bool isPlayingSong;
 
+
 	// Use this for initialization
 	void Start () {
         audioSource = GetComponent<AudioSource>();

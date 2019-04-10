@@ -5,6 +5,9 @@ using UnityEngine;
 public class AnvilMetalTrigger : MonoBehaviour {
 
     public Transform metalSongLocation;
+    public GameEvent startSongEvent;
+
+    bool hasMetal;
 
     private void OnTriggerStay(Collider other)
     {
@@ -12,6 +15,19 @@ public class AnvilMetalTrigger : MonoBehaviour {
         {
             other.transform.position = metalSongLocation.position;
             other.transform.rotation = metalSongLocation.rotation;
+
+            SongMetal songMetal = other.GetComponent<SongMetal>();
+            GameManager.instance.SetKoreography(songMetal.clip, songMetal.koreography);
+
+            hasMetal = true;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "HammerHead" && hasMetal )
+        {
+            startSongEvent.Raise();
         }
     }
 }
