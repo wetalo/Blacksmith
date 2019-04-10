@@ -87,9 +87,9 @@ public class OVRGrabbable : MonoBehaviour
         get { return m_snapOffsetLeft; }
     }
 
-    /// <summary>
-    /// Returns the OVRGrabber currently grabbing this object.
-    /// </summary>
+	/// <summary>
+	/// Returns the OVRGrabber currently grabbing this object.
+	/// </summary>
     public OVRGrabber grabbedBy
     {
         get { return m_grabbedBy; }
