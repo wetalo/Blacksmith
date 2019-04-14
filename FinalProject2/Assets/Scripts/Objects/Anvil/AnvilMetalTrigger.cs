@@ -11,7 +11,7 @@ public class AnvilMetalTrigger : MonoBehaviour {
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.tag == "SongMetal" && !other.GetComponent<OVRGrabbable>().isGrabbed)
+        if(other.tag == "SongMetal" && !other.GetComponent<OVRGrabbable>().isGrabbed && !hasMetal)
         {
             other.transform.position = metalSongLocation.position;
             other.transform.rotation = metalSongLocation.rotation;
@@ -20,6 +20,14 @@ public class AnvilMetalTrigger : MonoBehaviour {
             GameManager.instance.SetKoreography(songMetal.clip, songMetal.koreography);
 
             hasMetal = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.tag == "SongMetal")
+        {
+            hasMetal = false;
         }
     }
 

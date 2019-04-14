@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -18,10 +19,11 @@ MonoBehaviour:
   mTempoSections:
   - sectionName: New Section
     startSample: 0
-    samplesPerBeat: 22050
+    samplesPerBeat: 29400
     beatsPerMeasure: 4
     bStartNewMeasure: 1
   mTracks:
   - {fileID: 11400000, guid: 1ead79430948e8a4aa64a6492fa7b630, type: 2}
   - {fileID: 11400000, guid: 1cf0d44876bf5a147b1c7e27e917225a, type: 2}
   - {fileID: 11400000, guid: 6735030aad4a90b4a855ba3195c7de96, type: 2}
+  - {fileID: 11400000, guid: ef4bee1072ff5934bb65b3d248434923, type: 2}

@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using SonicBloom.Koreo;
+using SonicBloom.Koreo.Players;
 
 public class GameManager : MonoBehaviour {
     public static GameManager instance = null;
 
-    
+    public GameEvent beatHit;
+    SimpleMusicPlayer smp;
 
     void Awake()
     {
@@ -25,24 +27,39 @@ public class GameManager : MonoBehaviour {
         //Sets this to not be destroyed when reloading scene
         DontDestroyOnLoad(gameObject);
     }
-    
+
+    private void Start()
+    {
+        smp = GetComponent<SimpleMusicPlayer>();
+    }
+
     public void SetKoreography(AudioClip clip, Koreography koreography)
     {
+        //Koreographer.Instance.ClearEventRegister();
 
         GetComponent<AudioSource>().clip = clip;
-        
 
-        GetComponent<Koreographer>().LoadKoreography(koreography);
+        smp.LoadSong(koreography, 0, false);
+        Koreographer.Instance.LoadKoreography(koreography);
         string[] eventIds = koreography.GetEventIDs();
         foreach(string eventId in eventIds)
         {
+            if(eventId != "Beats")
+            {
             Koreographer.Instance.RegisterForEvents(eventId, OnMusicalHit);
+            }
         }
-        
+        Koreographer.Instance.RegisterForEvents("Beats", OnBeatHit);
+
     }
 
     public void OnMusicalHit(KoreographyEvent evt)
     {
+        Debug.Log(evt.ToString());
+    }
 
+    public void OnBeatHit(KoreographyEvent evt)
+    {
+        beatHit.Raise();
     }
 }
