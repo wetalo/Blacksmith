@@ -18,7 +18,7 @@ public class IndicatorManager : MonoBehaviour
     {
         int samplesToTarget = GetSpawnSampleOffset();
 
-        int currentTime = gameController.DelayedSampleTime;
+        int currentTime = ;
 
         // Spawn for all events within range.
         while (pendingEventIdx < laneEvents.Count &&
