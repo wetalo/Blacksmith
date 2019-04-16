@@ -1,11 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SonicBloom.Koreo;
 
 public class IndicatorManager : MonoBehaviour
 {
     public bool autoActivate;
     public Indicator[] indicators;
+    public KoreographyTrack track;
+
+    private void Update()
+    {
+        
+    }
+
+    void CheckSpawnNext()
+    {
+        int samplesToTarget = GetSpawnSampleOffset();
+
+        int currentTime = gameController.DelayedSampleTime;
+
+        // Spawn for all events within range.
+        while (pendingEventIdx < laneEvents.Count &&
+               laneEvents[pendingEventIdx].StartSample < currentTime + samplesToTarget)
+        {
+            KoreographyEvent evt = laneEvents[pendingEventIdx];
+
+            NoteObject newObj = gameController.GetFreshNoteObject();
+            newObj.Initialize(evt, color, this, gameController);
+
+            trackedNotes.Enqueue(newObj);
+
+            pendingEventIdx++;
+        }
+    }
 
     public void BeatIterate()
     {

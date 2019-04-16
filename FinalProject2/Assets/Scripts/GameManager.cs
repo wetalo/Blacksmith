@@ -10,6 +10,12 @@ public class GameManager : MonoBehaviour {
     public GameEvent beatHit;
     SimpleMusicPlayer smp;
 
+    List<KoreographyEvent> events;
+
+
+    public List<IndicatorManager> indicatorManagers;
+    public Koreography koreoGraphy;
+
     void Awake()
     {
         //Check if instance already exists
@@ -36,7 +42,7 @@ public class GameManager : MonoBehaviour {
     public void SetKoreography(AudioClip clip, Koreography koreography)
     {
         //Koreographer.Instance.ClearEventRegister();
-
+        this.koreoGraphy = koreography;
         GetComponent<AudioSource>().clip = clip;
 
         smp.LoadSong(koreography, 0, false);
@@ -51,6 +57,9 @@ public class GameManager : MonoBehaviour {
         }
         Koreographer.Instance.RegisterForEvents("Beats", OnBeatHit);
 
+        
+        
+
     }
 
     public void OnMusicalHit(KoreographyEvent evt)
@@ -61,5 +70,14 @@ public class GameManager : MonoBehaviour {
     public void OnBeatHit(KoreographyEvent evt)
     {
         beatHit.Raise();
+        foreach(IndicatorManager manager in indicatorManagers)
+        {
+            manager.BeatIterate();
+        }
+    }
+
+    public int GetCurrentTime()
+    {
+        return koreoGraphy.GetLatestSampleTime();
     }
 }
