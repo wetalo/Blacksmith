@@ -8,6 +8,9 @@ public class IndicatorManager : MonoBehaviour
     public bool autoActivate;
     public Indicator[] indicators;
     public KoreographyTrack track;
+    List<KoreographyEvent> laneEvents = new List<KoreographyEvent>();
+    int laneEventIndex = 0;
+    int timeBeforeSpawn;
 
     private void Update()
     {
@@ -16,22 +19,10 @@ public class IndicatorManager : MonoBehaviour
 
     void CheckSpawnNext()
     {
-        int samplesToTarget = GetSpawnSampleOffset();
-
-        int currentTime = ;
-
-        // Spawn for all events within range.
-        while (pendingEventIdx < laneEvents.Count &&
-               laneEvents[pendingEventIdx].StartSample < currentTime + samplesToTarget)
+        if((laneEvents[laneEventIndex].StartSample-timeBeforeSpawn) <= Koreographer.Instance.GetMusicSampleTime())
         {
-            KoreographyEvent evt = laneEvents[pendingEventIdx];
-
-            NoteObject newObj = gameController.GetFreshNoteObject();
-            newObj.Initialize(evt, color, this, gameController);
-
-            trackedNotes.Enqueue(newObj);
-
-            pendingEventIdx++;
+            ActivateInitialIndicator();
+            laneEventIndex++;
         }
     }
 

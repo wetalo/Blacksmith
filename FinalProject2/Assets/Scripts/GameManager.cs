@@ -48,13 +48,13 @@ public class GameManager : MonoBehaviour {
         smp.LoadSong(koreography, 0, false);
         Koreographer.Instance.LoadKoreography(koreography);
         string[] eventIds = koreography.GetEventIDs();
-        foreach(string eventId in eventIds)
+       /* foreach(string eventId in eventIds)
         {
             if(eventId != "Beats")
             {
             Koreographer.Instance.RegisterForEvents(eventId, OnMusicalHit);
             }
-        }
+        }*/
         Koreographer.Instance.RegisterForEvents("Beats", OnBeatHit);
 
         
