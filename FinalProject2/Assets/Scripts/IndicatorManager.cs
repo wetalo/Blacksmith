@@ -7,7 +7,6 @@ public class IndicatorManager : MonoBehaviour
 {
     public bool autoActivate;
     public Indicator[] indicators;
-    public KoreographyTrack track;
     List<KoreographyEvent> laneEvents = new List<KoreographyEvent>();
     int laneEventIndex = 0;
     int timeBeforeSpawn;
@@ -19,7 +18,7 @@ public class IndicatorManager : MonoBehaviour
 
     void CheckSpawnNext()
     {
-        if((laneEvents[laneEventIndex].StartSample-timeBeforeSpawn) <= Koreographer.Instance.GetMusicSampleTime())
+        if ((laneEvents[laneEventIndex].StartSample-timeBeforeSpawn) <= Koreographer.Instance.GetMusicSampleTime())
         {
             ActivateInitialIndicator();
             laneEventIndex++;
@@ -29,7 +28,7 @@ public class IndicatorManager : MonoBehaviour
     public void BeatIterate()
     {
         bool foundActivated = false;
-        for(int i=0; i<indicators.Length; i++)
+        for(int i= indicators.Length-1; i>=0; i--)
         {
             if (i != indicators.Length - 1)
             {
@@ -38,10 +37,10 @@ public class IndicatorManager : MonoBehaviour
                     foundActivated = true;
                     indicators[i].DeActivate();
                     indicators[i + 1].Activate();
-                    break;
+                    //break;
                 }
             }
-            else
+            else if (i == indicators.Length - 1)
             {
                 if (indicators[i].activated)
                 {
@@ -54,10 +53,20 @@ public class IndicatorManager : MonoBehaviour
         {
             indicators[0].Activate();
         }
+
+        CheckSpawnNext();
     }
 
     public void ActivateInitialIndicator()
     {
         indicators[0].Activate();
+    }
+
+    public void SetLaneEvents(KoreographyTrackBase track)
+    {
+
+        timeBeforeSpawn = GameManager.instance.spawnEarlyInSeconds * GameManager.instance.SampleRate; 
+        this.laneEvents = track.GetAllEvents();
+        laneEventIndex = 0;
     }
 }

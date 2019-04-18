@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour {
     public List<IndicatorManager> indicatorManagers;
     public Koreography koreoGraphy;
 
+    public int spawnEarlyInSeconds = 1;
+
+    
     void Awake()
     {
         //Check if instance already exists
@@ -34,6 +37,16 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
     }
 
+    public int SampleRate
+    {
+        get
+        {
+            return koreoGraphy.SampleRate;
+        }
+    }
+
+
+
     private void Start()
     {
         smp = GetComponent<SimpleMusicPlayer>();
@@ -47,7 +60,17 @@ public class GameManager : MonoBehaviour {
 
         smp.LoadSong(koreography, 0, false);
         Koreographer.Instance.LoadKoreography(koreography);
-        string[] eventIds = koreography.GetEventIDs();
+
+        
+        
+        for(int i=0; i<indicatorManagers.Count; i++)
+        {
+            if(koreography.GetTrackAtIndex(i).EventID != "Beats") { 
+                indicatorManagers[i].SetLaneEvents(koreography.GetTrackAtIndex(i));
+            }
+        }
+        
+        //string[] eventIds = koreography.GetEventIDs();
        /* foreach(string eventId in eventIds)
         {
             if(eventId != "Beats")
