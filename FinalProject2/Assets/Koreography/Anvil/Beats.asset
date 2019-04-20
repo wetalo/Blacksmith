@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: Beats
   mEventList:
+  - mStartSample: 0
+    mEndSample: 0
+  - mStartSample: 29400
+    mEndSample: 29400
+  - mStartSample: 58800
+    mEndSample: 58800
+  - mStartSample: 88200
+    mEndSample: 88200
   - mStartSample: 117600
     mEndSample: 117600
   - mStartSample: 147000
@@ -612,6 +620,10 @@ MonoBehaviour:
     mEndSample: 8849400
   - mStartSample: 8878800
     mEndSample: 8878800
+  - mStartSample: 8908200
+    mEndSample: 8908200
+  - mStartSample: 8937600
+    mEndSample: 8937600
   _SerializedPayloadTypes: []
   _AssetPayloads: []
   _AssetPayloadIdxs: 
