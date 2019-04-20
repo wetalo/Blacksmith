@@ -18,7 +18,9 @@ public class IndicatorManager : MonoBehaviour
 
     void CheckSpawnNext()
     {
-        if ((laneEvents[laneEventIndex].StartSample-timeBeforeSpawn) <= Koreographer.Instance.GetMusicSampleTime())
+        //
+        int nextBeatSample = GameManager.instance.GetNextBeatHitTime();
+        if ((laneEvents[laneEventIndex].StartSample) <= nextBeatSample)
         {
             ActivateInitialIndicator();
             laneEventIndex++;

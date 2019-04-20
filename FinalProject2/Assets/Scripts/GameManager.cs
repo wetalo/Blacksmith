@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour {
     public GameEvent beatHit;
     SimpleMusicPlayer smp;
 
-    List<KoreographyEvent> events;
-
+    public List<KoreographyEvent> beatEvents;
+    public int beatEventIndex;
 
     public List<IndicatorManager> indicatorManagers;
     public Koreography koreoGraphy;
@@ -67,6 +67,15 @@ public class GameManager : MonoBehaviour {
         {
             if(koreography.GetTrackAtIndex(i).EventID != "Beats") { 
                 indicatorManagers[i].SetLaneEvents(koreography.GetTrackAtIndex(i));
+                beatEventIndex = 0;
+            }
+           
+        }
+        for(int i =0; i < koreography.GetNumTracks(); i++)
+        {
+            if (koreography.GetTrackAtIndex(i).EventID == "Beats")
+            {
+                beatEvents = koreography.GetTrackAtIndex(i).GetAllEvents();
             }
         }
         
@@ -85,6 +94,19 @@ public class GameManager : MonoBehaviour {
 
     }
 
+    //Reads through the beat events, checks four beats ahead to see if the next beat should be spawned
+    public int GetNextBeatHitTime()
+    {
+        if(beatEvents.Count >= (beatEventIndex + 4))
+        {
+            return beatEvents[beatEventIndex + 4].StartSample;
+        } else
+        {
+            return beatEvents[beatEvents.Count-1].StartSample;
+        }
+
+    }
+
     public void OnMusicalHit(KoreographyEvent evt)
     {
         Debug.Log(evt.ToString());
@@ -93,6 +115,7 @@ public class GameManager : MonoBehaviour {
     public void OnBeatHit(KoreographyEvent evt)
     {
         beatHit.Raise();
+        beatEventIndex++;
         foreach(IndicatorManager manager in indicatorManagers)
         {
             manager.BeatIterate();
