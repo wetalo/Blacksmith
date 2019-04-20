@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour {
     public Koreography koreoGraphy;
 
     public int spawnEarlyInSeconds = 1;
+    public bool isPlayingSong;
 
     
     void Awake()

@@ -33,7 +33,7 @@ public class AnvilMetalTrigger : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "HammerHead" && hasMetal )
+        if(other.tag == "HammerHead" && hasMetal && !GameManager.instance.isPlayingSong)
         {
             startSongEvent.Raise();
         }
