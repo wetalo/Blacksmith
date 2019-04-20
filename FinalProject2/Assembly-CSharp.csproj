@@ -382,6 +382,7 @@
     <Compile Include="Assets\Scripts\Events\GameEventListener.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Indicator.cs" />
+    <Compile Include="Assets\Scripts\IndicatorHitbox.cs" />
     <Compile Include="Assets\Scripts\IndicatorManager.cs" />
     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\Objects\Anvil\AnvilMetalTrigger.cs" />
