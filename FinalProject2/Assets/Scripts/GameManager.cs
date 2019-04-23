@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
     public static GameManager instance = null;
 
     public GameEvent beatHit;
+    public GameEvent endOfSongEvent;
     SimpleMusicPlayer smp;
 
     public List<KoreographyEvent> beatEvents;
@@ -19,6 +20,10 @@ public class GameManager : MonoBehaviour {
     public int spawnEarlyInSeconds = 1;
     public bool isPlayingSong;
 
+    
+
+
+    public WorldState worldState;
     
     void Awake()
     {
@@ -46,6 +51,11 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public void SetWorldState(WorldState worldState)
+    {
+        this.worldState = worldState;
+    }
+
 
 
     private void Start()
@@ -66,7 +76,7 @@ public class GameManager : MonoBehaviour {
         
         for(int i=0; i<indicatorManagers.Count; i++)
         {
-            if(koreography.GetTrackAtIndex(i).EventID != "Beats") { 
+            if(koreography.GetTrackAtIndex(i).EventID != "Beats" && koreography.GetTrackAtIndex(i).EventID != "EndOfSong") { 
                 indicatorManagers[i].SetLaneEvents(koreography.GetTrackAtIndex(i));
                 beatEventIndex = 0;
             }
@@ -79,19 +89,20 @@ public class GameManager : MonoBehaviour {
                 beatEvents = koreography.GetTrackAtIndex(i).GetAllEvents();
             }
         }
-        
+
         //string[] eventIds = koreography.GetEventIDs();
-       /* foreach(string eventId in eventIds)
-        {
-            if(eventId != "Beats")
-            {
-            Koreographer.Instance.RegisterForEvents(eventId, OnMusicalHit);
-            }
-        }*/
+        /* foreach(string eventId in eventIds)
+         {
+             if(eventId != "Beats")
+             {
+             Koreographer.Instance.RegisterForEvents(eventId, OnMusicalHit);
+             }
+         }*/
         Koreographer.Instance.RegisterForEvents("Beats", OnBeatHit);
 
-        
-        
+        Koreographer.Instance.RegisterForEvents("EndOfSong", EndOfSong);
+
+
 
     }
 
@@ -117,10 +128,15 @@ public class GameManager : MonoBehaviour {
     {
         beatHit.Raise();
         beatEventIndex++;
-        foreach(IndicatorManager manager in indicatorManagers)
+        foreach (IndicatorManager manager in indicatorManagers)
         {
             manager.BeatIterate();
         }
+    }
+
+    public void EndOfSong(KoreographyEvent evt)
+    {
+        endOfSongEvent.Raise();
     }
 
     public int GetCurrentTime()

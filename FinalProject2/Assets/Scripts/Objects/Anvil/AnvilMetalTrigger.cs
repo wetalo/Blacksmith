@@ -5,7 +5,7 @@ using UnityEngine;
 public class AnvilMetalTrigger : MonoBehaviour {
 
     public Transform metalSongLocation;
-    public GameEvent startSongEvent;
+    public GameEvent beginAnvilTransition;
 
     bool hasMetal;
 
@@ -35,7 +35,7 @@ public class AnvilMetalTrigger : MonoBehaviour {
     {
         if(other.tag == "HammerHead" && hasMetal && !GameManager.instance.isPlayingSong)
         {
-            startSongEvent.Raise();
+            beginAnvilTransition.Raise();
         }
     }
 }
