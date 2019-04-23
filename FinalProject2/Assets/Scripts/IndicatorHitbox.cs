@@ -34,6 +34,10 @@ public class IndicatorHitbox : MonoBehaviour
             }
             GameObject hitInstance = GameObject.Instantiate(hitParticle, other.ClosestPointOnBounds(transform.position), Quaternion.identity);
             hitInstance.transform.rotation = Quaternion.LookRotation(transform.up, Vector3.up);
+            greenIndicator.hitSuccess = true;
+        } else if (other.tag == "HammerHead" && !greenIndicator.activated && GameManager.instance.isPlayingSong)
+        {
+            GameManager.instance.AddBadHit();
         }
     }
 }

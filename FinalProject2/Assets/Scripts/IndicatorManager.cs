@@ -47,8 +47,11 @@ public class IndicatorManager : MonoBehaviour
             {
                 if (indicators[i].activated)
                 {
+                    IndicatorDone(indicators[i].hitSuccess, indicators[i].badHit);
                     foundActivated = true;
                     indicators[i].DeActivate();
+                    indicators[i].hitSuccess = false;
+                    indicators[i].badHit = false;
                 }
             }
         }
@@ -71,5 +74,19 @@ public class IndicatorManager : MonoBehaviour
         timeBeforeSpawn = GameManager.instance.spawnEarlyInSeconds * GameManager.instance.SampleRate; 
         this.laneEvents = track.GetAllEvents();
         laneEventIndex = 0;
+    }
+
+    void IndicatorDone(bool hitSuccess, bool badHit)
+    {
+        if (hitSuccess)
+        {
+            GameManager.instance.AddGoodHit();
+        } else if (badHit)
+        {
+            GameManager.instance.AddBadHit();
+        } else
+        {
+            GameManager.instance.AddMiss();
+        }
     }
 }

@@ -5,7 +5,19 @@ using UnityEngine;
 public class Indicator : MonoBehaviour
 
 {
+    public enum HitStates
+    {
+        Inactive,
+        Early,
+        Good,
+        Late
+    }
+
+    HitStates hitState;
+
     public bool activated;
+    public bool hitSuccess = false;
+    public bool badHit = false;
 
     public Material activatedMaterial;
     public Material inactiveMaterial;

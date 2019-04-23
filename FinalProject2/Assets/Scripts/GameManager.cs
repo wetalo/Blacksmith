@@ -24,6 +24,11 @@ public class GameManager : MonoBehaviour {
 
 
     public WorldState worldState;
+
+    public int numBeats;
+    public int numGoodHits;
+    public int numBadHits;
+    public int numMisses;
     
     void Awake()
     {
@@ -65,6 +70,11 @@ public class GameManager : MonoBehaviour {
 
     public void SetKoreography(AudioClip clip, Koreography koreography)
     {
+        numBeats = 0;
+        numGoodHits = 0;
+        numBadHits = 0;
+        numMisses = 0;
+
         //Koreographer.Instance.ClearEventRegister();
         this.koreoGraphy = koreography;
         GetComponent<AudioSource>().clip = clip;
@@ -87,6 +97,7 @@ public class GameManager : MonoBehaviour {
             if (koreography.GetTrackAtIndex(i).EventID == "Beats")
             {
                 beatEvents = koreography.GetTrackAtIndex(i).GetAllEvents();
+                numBeats += beatEvents.Count;
             }
         }
 
@@ -109,9 +120,9 @@ public class GameManager : MonoBehaviour {
     //Reads through the beat events, checks four beats ahead to see if the next beat should be spawned
     public int GetNextBeatHitTime()
     {
-        if(beatEvents.Count >= (beatEventIndex + 4))
+        if(beatEvents.Count >= (beatEventIndex + 3))
         {
-            return beatEvents[beatEventIndex + 4].StartSample;
+            return beatEvents[beatEventIndex + 3].StartSample;
         } else
         {
             return beatEvents[beatEvents.Count-1].StartSample;
@@ -144,5 +155,18 @@ public class GameManager : MonoBehaviour {
         return koreoGraphy.GetLatestSampleTime();
     }
 
+    public void AddGoodHit()
+    {
+        this.numGoodHits++;
+    }
 
+    public void AddBadHit()
+    {
+        this.numBadHits++;
+    }
+
+    public void AddMiss()
+    {
+        this.numMisses++;
+    }
 }

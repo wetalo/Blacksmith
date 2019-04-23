@@ -4101,6 +4101,10 @@ MonoBehaviour:
   spawnEarlyInSeconds: 1
   isPlayingSong: 0
   worldState: 0
+  numBeats: 0
+  numGoodHits: 0
+  numBadHits: 0
+  numMisses: 0
 --- !u!114 &3339362468305221488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4145,7 +4149,7 @@ MonoBehaviour:
   spotLight: {fileID: 1531763651}
   directionalLight: {fileID: 3339362467617010911}
   directionalLightTransitionTime: 1
-  spotLightTransitionTime: 1
+  spotLightTransitionTime: 2.5
   startSongEvent: {fileID: 11400000, guid: 68c1f50c0cccdf24d8666006066aa93f, type: 2}
 --- !u!1 &3339362468307299968
 GameObject:
