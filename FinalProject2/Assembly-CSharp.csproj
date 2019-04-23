@@ -61,10 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\EasyColliderEditor\Scripts\EasyColliderEditor.cs" />
-    <Compile Include="Assets\EasyColliderEditor\Scripts\EasyColliderPreferences.cs" />
-    <Compile Include="Assets\EasyColliderEditor\Scripts\MeshListBuilder.cs" />
-    <Compile Include="Assets\EasyColliderEditor\Scripts\MeshTransform.cs" />
     <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\ButtonController.cs" />
     <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\DemoDelayDisplayUI.cs" />
     <Compile Include="Assets\Koreographer\Demos\Rhythm Game Demo\Scripts\DemoPitchDisplayUI.cs" />
@@ -377,7 +373,6 @@
     <Compile Include="Assets\Scripts\Deprecated\SwordBlend.cs" />
     <Compile Include="Assets\Scripts\Deprecated\SwordHit.cs" />
     <Compile Include="Assets\Scripts\Deprecated\SwordHitboxType.cs" />
-    <Compile Include="Assets\Scripts\EditorScripts\SongEditor.cs" />
     <Compile Include="Assets\Scripts\Events\GameEvent.cs" />
     <Compile Include="Assets\Scripts\Events\GameEventListener.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
