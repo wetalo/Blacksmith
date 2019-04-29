@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: AnvilTrack1
   mEventList:
-  - mStartSample: 242550
-    mEndSample: 242550
-  - mStartSample: 477750
-    mEndSample: 477750
+  - mStartSample: 235200
+    mEndSample: 235200
+  - mStartSample: 646800
+    mEndSample: 646800
+  - mStartSample: 940800
+    mEndSample: 940800
   _SerializedPayloadTypes: []
   _AssetPayloads: []
   _AssetPayloadIdxs: 
