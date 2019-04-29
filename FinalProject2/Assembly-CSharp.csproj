@@ -358,9 +358,9 @@
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\Helpers\OVRMicInput.cs" />
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceMod.cs" />
     <Compile Include="Assets\Oculus\VoiceMod\Scripts\OVRVoiceModContext.cs" />
+    <Compile Include="Assets\Scripts\ControllerManager.cs" />
     <Compile Include="Assets\Scripts\Deprecated\Beat.cs" />
     <Compile Include="Assets\Scripts\Deprecated\BucketTrigger.cs" />
-    <Compile Include="Assets\Scripts\Deprecated\ControllerManager.cs" />
     <Compile Include="Assets\Scripts\Deprecated\Expander.cs" />
     <Compile Include="Assets\Scripts\Deprecated\FixedScale.cs" />
     <Compile Include="Assets\Scripts\Deprecated\LifeTime.cs" />
@@ -386,6 +386,7 @@
     <Compile Include="Assets\Scripts\Objects\Teleporter\Teleporter.cs" />
     <Compile Include="Assets\Scripts\Objects\Teleporter\TeleporterButton.cs" />
     <Compile Include="Assets\Scripts\Objects\Teleporter\TeleporterHitbox.cs" />
+    <Compile Include="Assets\Scripts\ParticleCreator.cs" />
     <Compile Include="Assets\Scripts\StateManager.cs" />
     <Compile Include="Assets\Scripts\Variables\FloatReference.cs" />
     <Compile Include="Assets\Scripts\Variables\FloatVariable.cs" />
@@ -427,43 +428,43 @@
     <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\ToyCubeWithOutline.shader" />
     <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\CrosshairZCheat.shader" />
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -667,16 +668,16 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.12f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="SonicBloom.Koreo">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Assets/Plugins/Koreographer/Unity Editor/SonicBloom.Koreo.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Assets/Plugins/Koreographer/Unity Editor/SonicBloom.Koreo.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/Documents/GitRepositories/Blacksmith/FinalProject2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/UnityProjects/GitHub/Blacksmith/FinalProject2/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>

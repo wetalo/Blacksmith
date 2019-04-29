@@ -29,7 +29,7 @@ public class IndicatorManager : MonoBehaviour
 
     public void BeatIterate()
     {
-        Debug.Log("BeatIterate " + GameManager.instance.koreoGraphy.GetLatestSampleTime());
+        //Debug.Log("BeatIterate " + GameManager.instance.koreoGraphy.GetLatestSampleTime());
         bool foundActivated = false;
         for(int i= indicators.Length-1; i>=0; i--)
         {
