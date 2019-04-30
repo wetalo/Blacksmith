@@ -14,12 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: GrinderTrack2
   mEventList:
-  - mStartSample: 352800
-    mEndSample: 352800
-  - mStartSample: 558600
-    mEndSample: 558600
-  - mStartSample: 1058400
-    mEndSample: 1058400
+  - mStartSample: 1117200
+    mEndSample: 1117200
   _SerializedPayloadTypes: []
   _AssetPayloads: []
   _AssetPayloadIdxs: 

@@ -367,7 +367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: 6cb457993bbf03f418daeea762cf080e, type: 3}
-  koreography: {fileID: 0}
+  koreography: {fileID: 11400000, guid: 2b3fec9899bec0a4e813279721b8e49e, type: 2}
 --- !u!95 &354170079
 Animator:
   serializedVersion: 3
