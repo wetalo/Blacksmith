@@ -15,7 +15,7 @@ public class IndicatorHitbox : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerCamera = GameObject.Find("OVRCameraRig").transform;
+        //playerCamera = GameObject.Find("OVRCameraRig").transform;
     }
 
     // Update is called once per frame
