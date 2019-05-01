@@ -16,10 +16,14 @@ MonoBehaviour:
   mEventList:
   - mStartSample: 235200
     mEndSample: 235200
+  - mStartSample: 441000
+    mEndSample: 441000
   - mStartSample: 646800
     mEndSample: 646800
   - mStartSample: 940800
     mEndSample: 940800
+  - mStartSample: 1234800
+    mEndSample: 1234800
   _SerializedPayloadTypes: []
   _AssetPayloads: []
   _AssetPayloadIdxs: 

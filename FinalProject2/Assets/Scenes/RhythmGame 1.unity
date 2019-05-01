@@ -184,6 +184,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6859243509301089724, guid: bbaccfff02f31ef4e81bbd931cccd92a,
+        type: 3}
+      propertyPath: activatedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 864ce5eed8104bf45a758c6b6c178389, type: 2}
+    - target: {fileID: 5119857592630815735, guid: bbaccfff02f31ef4e81bbd931cccd92a,
+        type: 3}
+      propertyPath: activatedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a82d39ccff63a848bb798ae3e5d2943, type: 2}
     - target: {fileID: 901592650948903461, guid: bbaccfff02f31ef4e81bbd931cccd92a,
         type: 3}
       propertyPath: hitParticle
@@ -196,16 +206,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ca4e9c8e7654fd34db11862dfa2578dc,
         type: 2}
-    - target: {fileID: 6859243509301089724, guid: bbaccfff02f31ef4e81bbd931cccd92a,
-        type: 3}
-      propertyPath: activatedMaterial
-      value: 
-      objectReference: {fileID: 2100000, guid: 864ce5eed8104bf45a758c6b6c178389, type: 2}
-    - target: {fileID: 5119857592630815735, guid: bbaccfff02f31ef4e81bbd931cccd92a,
-        type: 3}
-      propertyPath: activatedMaterial
-      value: 
-      objectReference: {fileID: 2100000, guid: 4a82d39ccff63a848bb798ae3e5d2943, type: 2}
     - target: {fileID: 9029499232622750479, guid: bbaccfff02f31ef4e81bbd931cccd92a,
         type: 3}
       propertyPath: activatedMaterial
@@ -265,7 +265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &354170072
 Transform:
   m_ObjectHideFlags: 0
@@ -511,6 +511,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6859243509301089724, guid: bbaccfff02f31ef4e81bbd931cccd92a,
+        type: 3}
+      propertyPath: activatedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 864ce5eed8104bf45a758c6b6c178389, type: 2}
+    - target: {fileID: 5119857592630815735, guid: bbaccfff02f31ef4e81bbd931cccd92a,
+        type: 3}
+      propertyPath: activatedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a82d39ccff63a848bb798ae3e5d2943, type: 2}
     - target: {fileID: 901592650948903461, guid: bbaccfff02f31ef4e81bbd931cccd92a,
         type: 3}
       propertyPath: hitParticle
@@ -523,16 +533,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ca4e9c8e7654fd34db11862dfa2578dc,
         type: 2}
-    - target: {fileID: 6859243509301089724, guid: bbaccfff02f31ef4e81bbd931cccd92a,
-        type: 3}
-      propertyPath: activatedMaterial
-      value: 
-      objectReference: {fileID: 2100000, guid: 864ce5eed8104bf45a758c6b6c178389, type: 2}
-    - target: {fileID: 5119857592630815735, guid: bbaccfff02f31ef4e81bbd931cccd92a,
-        type: 3}
-      propertyPath: activatedMaterial
-      value: 
-      objectReference: {fileID: 2100000, guid: 4a82d39ccff63a848bb798ae3e5d2943, type: 2}
     - target: {fileID: 9029499232622750479, guid: bbaccfff02f31ef4e81bbd931cccd92a,
         type: 3}
       propertyPath: activatedMaterial
@@ -1261,7 +1261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &3339362466818150509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5343,6 +5343,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6859243509301089724, guid: bbaccfff02f31ef4e81bbd931cccd92a,
+        type: 3}
+      propertyPath: activatedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 864ce5eed8104bf45a758c6b6c178389, type: 2}
+    - target: {fileID: 5119857592630815735, guid: bbaccfff02f31ef4e81bbd931cccd92a,
+        type: 3}
+      propertyPath: activatedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 4a82d39ccff63a848bb798ae3e5d2943, type: 2}
     - target: {fileID: 901592650948903461, guid: bbaccfff02f31ef4e81bbd931cccd92a,
         type: 3}
       propertyPath: hitParticle
@@ -5355,16 +5365,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ca4e9c8e7654fd34db11862dfa2578dc,
         type: 2}
-    - target: {fileID: 6859243509301089724, guid: bbaccfff02f31ef4e81bbd931cccd92a,
-        type: 3}
-      propertyPath: activatedMaterial
-      value: 
-      objectReference: {fileID: 2100000, guid: 864ce5eed8104bf45a758c6b6c178389, type: 2}
-    - target: {fileID: 5119857592630815735, guid: bbaccfff02f31ef4e81bbd931cccd92a,
-        type: 3}
-      propertyPath: activatedMaterial
-      value: 
-      objectReference: {fileID: 2100000, guid: 4a82d39ccff63a848bb798ae3e5d2943, type: 2}
     - target: {fileID: 9029499232622750479, guid: bbaccfff02f31ef4e81bbd931cccd92a,
         type: 3}
       propertyPath: activatedMaterial
