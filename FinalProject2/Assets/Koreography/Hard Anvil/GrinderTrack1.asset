@@ -18,28 +18,16 @@ MonoBehaviour:
     mEndSample: 823200
   - mStartSample: 940800
     mEndSample: 940800
-  - mStartSample: 999600
-    mEndSample: 999600
-  - mStartSample: 1087800
-    mEndSample: 1087800
-  - mStartSample: 1146600
-    mEndSample: 1146600
-  - mStartSample: 1264200
-    mEndSample: 1264200
-  - mStartSample: 1308300
-    mEndSample: 1308300
+  - mStartSample: 1131900
+    mEndSample: 1131900
+  - mStartSample: 1220100
+    mEndSample: 1220100
   - mStartSample: 1337700
     mEndSample: 1337700
-  - mStartSample: 1367100
-    mEndSample: 1367100
-  - mStartSample: 1396500
-    mEndSample: 1396500
-  - mStartSample: 1425900
-    mEndSample: 1425900
-  - mStartSample: 1455300
-    mEndSample: 1455300
-  - mStartSample: 1484700
-    mEndSample: 1484700
+  - mStartSample: 1411200
+    mEndSample: 1411200
+  - mStartSample: 1470000
+    mEndSample: 1470000
   - mStartSample: 1514100
     mEndSample: 1514100
   - mStartSample: 1558200
