@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: GrinderTrack3
   mEventList:
-  - mStartSample: 882000
-    mEndSample: 882000
   - mStartSample: 999600
     mEndSample: 999600
+  - mStartSample: 1102500
+    mEndSample: 1102500
   - mStartSample: 1176000
     mEndSample: 1176000
   - mStartSample: 1293600
     mEndSample: 1293600
-  - mStartSample: 1367100
-    mEndSample: 1367100
-  - mStartSample: 1470000
-    mEndSample: 1470000
+  - mStartSample: 1411200
+    mEndSample: 1411200
+  - mStartSample: 1455300
+    mEndSample: 1455300
   - mStartSample: 1617000
     mEndSample: 1617000
   - mStartSample: 1734600
@@ -74,18 +74,14 @@ MonoBehaviour:
     mEndSample: 3381000
   - mStartSample: 3410400
     mEndSample: 3410400
-  - mStartSample: 3439800
-    mEndSample: 3439800
-  - mStartSample: 3469200
-    mEndSample: 3469200
-  - mStartSample: 3498600
-    mEndSample: 3498600
-  - mStartSample: 3572100
-    mEndSample: 3572100
-  - mStartSample: 3660300
-    mEndSample: 3660300
-  - mStartSample: 3792600
-    mEndSample: 3792600
+  - mStartSample: 3586800
+    mEndSample: 3586800
+  - mStartSample: 3645600
+    mEndSample: 3645600
+  - mStartSample: 3763200
+    mEndSample: 3763200
+  - mStartSample: 3822000
+    mEndSample: 3822000
   - mStartSample: 3910200
     mEndSample: 3910200
   - mStartSample: 3998400
@@ -94,12 +90,12 @@ MonoBehaviour:
     mEndSample: 4057200
   - mStartSample: 4116000
     mEndSample: 4116000
-  - mStartSample: 4174800
-    mEndSample: 4174800
-  - mStartSample: 4248300
-    mEndSample: 4248300
-  - mStartSample: 4277700
-    mEndSample: 4277700
+  - mStartSample: 4204200
+    mEndSample: 4204200
+  - mStartSample: 4263000
+    mEndSample: 4263000
+  - mStartSample: 4351200
+    mEndSample: 4351200
   - mStartSample: 4468800
     mEndSample: 4468800
   - mStartSample: 4498200
@@ -108,18 +104,16 @@ MonoBehaviour:
     mEndSample: 4527600
   - mStartSample: 4557000
     mEndSample: 4557000
-  - mStartSample: 4586400
-    mEndSample: 4586400
-  - mStartSample: 4615800
-    mEndSample: 4615800
-  - mStartSample: 4645200
-    mEndSample: 4645200
-  - mStartSample: 4674600
-    mEndSample: 4674600
   - mStartSample: 4704000
     mEndSample: 4704000
-  - mStartSample: 4909800
-    mEndSample: 4909800
+  - mStartSample: 4733400
+    mEndSample: 4733400
+  - mStartSample: 4762800
+    mEndSample: 4762800
+  - mStartSample: 4792200
+    mEndSample: 4792200
+  - mStartSample: 4939200
+    mEndSample: 4939200
   _SerializedPayloadTypes: []
   _AssetPayloads: []
   _AssetPayloadIdxs: 
