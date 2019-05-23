@@ -119,6 +119,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3339362468658635139}
     m_Modifications:
+    - target: {fileID: 2240942757036516833, guid: bbaccfff02f31ef4e81bbd931cccd92a,
+        type: 3}
+      propertyPath: m_Name
+      value: SquareIndicators (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 2240942757036358081, guid: bbaccfff02f31ef4e81bbd931cccd92a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -173,11 +178,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2240942757036516833, guid: bbaccfff02f31ef4e81bbd931cccd92a,
-        type: 3}
-      propertyPath: m_Name
-      value: SquareIndicators (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7743111140560588164, guid: bbaccfff02f31ef4e81bbd931cccd92a,
         type: 3}
@@ -265,7 +265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &354170072
 Transform:
   m_ObjectHideFlags: 0
@@ -446,6 +446,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3339362468658635139}
     m_Modifications:
+    - target: {fileID: 2240942757036516833, guid: bbaccfff02f31ef4e81bbd931cccd92a,
+        type: 3}
+      propertyPath: m_Name
+      value: SquareIndicators (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 2240942757036358081, guid: bbaccfff02f31ef4e81bbd931cccd92a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -500,11 +505,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2240942757036516833, guid: bbaccfff02f31ef4e81bbd931cccd92a,
-        type: 3}
-      propertyPath: m_Name
-      value: SquareIndicators (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7743111140560588164, guid: bbaccfff02f31ef4e81bbd931cccd92a,
         type: 3}
@@ -1261,7 +1261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &3339362466818150509
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3131,6 +3131,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5330710236804624864}
     m_Modifications:
+    - target: {fileID: 1317883388450780, guid: 8ab6546b8907e5546aec9d1fc57d36af, type: 3}
+      propertyPath: m_Name
+      value: WaterBucket
+      objectReference: {fileID: 0}
     - target: {fileID: 4651430585020566, guid: 8ab6546b8907e5546aec9d1fc57d36af, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.4428196
@@ -3174,10 +3178,6 @@ PrefabInstance:
     - target: {fileID: 4651430585020566, guid: 8ab6546b8907e5546aec9d1fc57d36af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1317883388450780, guid: 8ab6546b8907e5546aec9d1fc57d36af, type: 3}
-      propertyPath: m_Name
-      value: WaterBucket
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ab6546b8907e5546aec9d1fc57d36af, type: 3}
@@ -3720,6 +3720,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5330710236804624864}
     m_Modifications:
+    - target: {fileID: 1317883388450780, guid: 8ab6546b8907e5546aec9d1fc57d36af, type: 3}
+      propertyPath: m_Name
+      value: WaterBucket (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 4651430585020566, guid: 8ab6546b8907e5546aec9d1fc57d36af, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.2311802
@@ -3763,10 +3767,6 @@ PrefabInstance:
     - target: {fileID: 4651430585020566, guid: 8ab6546b8907e5546aec9d1fc57d36af, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1317883388450780, guid: 8ab6546b8907e5546aec9d1fc57d36af, type: 3}
-      propertyPath: m_Name
-      value: WaterBucket (1)
       objectReference: {fileID: 0}
     - target: {fileID: 23136212167945028, guid: 8ab6546b8907e5546aec9d1fc57d36af,
         type: 3}
@@ -5278,6 +5278,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3339362468658635139}
     m_Modifications:
+    - target: {fileID: 2240942757036516833, guid: bbaccfff02f31ef4e81bbd931cccd92a,
+        type: 3}
+      propertyPath: m_Name
+      value: SquareIndicators
+      objectReference: {fileID: 0}
     - target: {fileID: 2240942757036358081, guid: bbaccfff02f31ef4e81bbd931cccd92a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5332,11 +5337,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2240942757036516833, guid: bbaccfff02f31ef4e81bbd931cccd92a,
-        type: 3}
-      propertyPath: m_Name
-      value: SquareIndicators
       objectReference: {fileID: 0}
     - target: {fileID: 7743111140560588164, guid: bbaccfff02f31ef4e81bbd931cccd92a,
         type: 3}
@@ -5402,6 +5402,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5330710236804624864}
     m_Modifications:
+    - target: {fileID: 7614004214642827214, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f,
+        type: 3}
+      propertyPath: m_Name
+      value: LocalAvatarWithGrab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614004214642827214, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7619091427260652046, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5455,16 +5465,6 @@ PrefabInstance:
     - target: {fileID: 7619091427260652046, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7614004214642827214, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f,
-        type: 3}
-      propertyPath: m_Name
-      value: LocalAvatarWithGrab
-      objectReference: {fileID: 0}
-    - target: {fileID: 7614004214642827214, guid: f7d8e8ab3d9891f40a99da5e1fff1d4f,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
